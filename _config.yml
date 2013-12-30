@@ -1,0 +1,8 @@
+name: Andrew Ledvina
+markdown: redcarpet
+safe: true
+lsi: false
+pygments: true
+timezone: America/Los_Angeles
+paginate: 2
+paginate_path: "blog/page:num"

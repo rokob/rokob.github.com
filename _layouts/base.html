@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>{{ page.title }}</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="{{ site.url }}/" class="title">Rokob</a></h1>
+        <p>all the things</p>
+
+
+        {% for page in site.pages %}
+          {% if page.url contains 'blog/page' %}
+          {% else %}
+            <p class="view"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></p>
+          {% endif %}
+        {% endfor %}
+        <p class="view"><a href="https://github.com/rokob">View My GitHub Profile</a></p>
+
+        {% if page.categories %}
+        <h4>Categories:</h4>
+        <ol class="tags">
+        {% for category in page.categories %}
+          <li>{{ category }}</li>
+        {% endfor %}
+        </ol>
+        {% endif %}
+
+        {% if page.tags %}
+        <h4>Tags:</h4> 
+        <ol class="tags">
+        {% for tag in page.tags %}
+         <li>{{ tag }}</li>
+        {% endfor %}
+        </ol>
+        {% endif %}
+      </header>
+      <section>
+
+      {{ content }}
+
+      </section>
+      <footer>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="/js/scale.fix.js"></script>
+    
+  </body>
+</html>
