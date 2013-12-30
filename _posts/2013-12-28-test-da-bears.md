@@ -1,9 +1,9 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2013-12-29 11:10:55
-categories: jekyll update
-tags: something new
+title:  "Test Da Bears"
+date:   2013-12-28 11:10:55
+categories: test
+tags: bears new
 ---
 
 You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!

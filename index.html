@@ -1,14 +1,16 @@
 ---
 layout: base
 title: Home 
-root: true
 ---
 
 <div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
+  <h1>Hello, world!</h1>
+  <p>I am currently a software engineer (formerly a data scientist) at <a href="http://www.facebook.com/" target="_blank">Facebook</a>.
+ Prior to joining Facebook, I was a Postdoctoral Scholar in Mathematical Finance at the 
+ <a href="http://www.caltech.edu/" target="_blank">California Institute of Technology</a>; and before that I did my PhD at 
+<a href="http://www.princeton.edu/" target="_blank">Princeton University</a>. 
+At the moment, most of this site is focused around my 
+<a href="{{ site.url }}/blog/">blog</a>, but things will be expanding <strike>quickly</strike> slowly.
+</p>
+<p><a class="btn primary large" href="{{ site.url }}/about/">More about me &raquo;</a></p>
 </div>
