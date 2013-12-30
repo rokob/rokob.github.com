@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/pygment_trac.css">
+    <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -18,14 +19,13 @@
         <h1><a href="{{ site.url }}/" class="title">Rokob</a></h1>
         <p>all the things</p>
 
-
         {% for page in site.pages %}
           {% if page.url contains 'blog/page' %}
           {% else %}
             <p class="view"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></p>
           {% endif %}
         {% endfor %}
-        <p class="view"><a href="https://github.com/rokob">View My GitHub Profile</a></p>
+        <p class="view"><i class="fa fa-github fa-fw fa-lg"></i><a href="https://github.com/rokob">View My GitHub Profile</a></p>
 
         {% if page.categories %}
         <h4>Categories:</h4>

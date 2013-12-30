@@ -3,4 +3,4 @@ Gemfile
 Gemfile.lock
 .bundle
 deploy/*
-deploy
+deploy/
