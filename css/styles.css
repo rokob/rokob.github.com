@@ -196,6 +196,12 @@ footer {
   bottom:50px;
 }
 
+.categories, .tags, .commit {
+  position: relative;
+  display: inline-block;
+  margin-right: 30px;
+}
+
 @media print, screen and (max-width: 960px) {
   
   div.wrapper {
@@ -256,6 +262,10 @@ footer {
   
   header ul {
     display:none;
+  }
+
+  .categories, .tags, .commit {
+    margin-right: 10px;
   }
 }
 

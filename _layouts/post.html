@@ -7,5 +7,13 @@ layout: base
 <div class="post">
 {{ content }}
 <br />
+<div class="categories">
+{% if page.categories.count > 1 %}Categories:{% else %}Category:{% endif %} {{ page.categories | join: ',  ' }} 
+</div>
+<div class="tags">
+<i class="fa fa-tags fa-lg"></i> {{ page.tags | join: ',  ' }} 
+</div>
+<div class="commit">
 {% commit rokob/rokob.github.com %}
+</div>
 </div>

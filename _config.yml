@@ -4,6 +4,6 @@ safe: false
 lsi: false
 pygments: true
 timezone: America/Los_Angeles
-paginate: 2
+paginate: 5
 paginate_path: "blog/page:num"
 exclude: [deploy.sh, Gemfile, Gemfile.lock]

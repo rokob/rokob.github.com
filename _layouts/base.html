@@ -22,28 +22,16 @@
         {% for page in site.pages %}
           {% if page.url contains 'blog/page' %}
           {% else %}
-            <p class="view"><a href="{{ site.url }}{{ page.url }}">{{ page.title }}</a></p>
+            <p class="view"><i class="fa {{ page.icon }} fa-fw"> </i><a href="{{ site.url }}{{ page.url }}">  {{ page.title }}</a></p>
           {% endif %}
         {% endfor %}
-        <p class="view"><i class="fa fa-github fa-fw fa-lg"></i><a href="https://github.com/rokob">View My GitHub Profile</a></p>
-
-        {% if page.categories %}
-        <h4>Categories:</h4>
-        <ol class="tags">
-        {% for category in page.categories %}
-          <li>{{ category }}</li>
-        {% endfor %}
-        </ol>
-        {% endif %}
-
-        {% if page.tags %}
-        <h4>Tags:</h4> 
-        <ol class="tags">
-        {% for tag in page.tags %}
-         <li>{{ tag }}</li>
-        {% endfor %}
-        </ol>
-        {% endif %}
+        <p class="view">
+          <a href="https://www.facebook.com/aledvina"><i class="fa fa-facebook fa-fw fa-lg"></i></a>
+          <a href="https://twitter.com/wolfgangfabian"><i class="fa fa-twitter fa-fw fa-lg"></i></a>
+          <a href="https://instagram.com/wolfgangfabian"><i class="fa fa-instagram fa-fw fa-lg"></i></a>
+          <a href="https://github.com/rokob"><i class="fa fa-github fa-fw fa-lg"></i></a>
+          <a href="https://bitbucket.org/rokob"><i class="fa fa-bitbucket fa-fw fa-lg"></i></a>
+        </p>
       </header>
       <section>
 

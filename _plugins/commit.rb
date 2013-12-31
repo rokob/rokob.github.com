@@ -11,6 +11,8 @@ module Jekyll
       sha = `git log -n 1 --pretty=format:%H -- #{page_file}`
       message = `git log -n 1 --pretty=format:%s -- #{page_file}`
 
+      history_icon = "<i class=\"fa fa-code-fork fa-lg\"></i>"
+
       history_url = "<a href='https://github.com/rokob/rokob.github.com/commits/source/"
       history_url += file_path
       history_url += "'>History</a>"
@@ -25,7 +27,7 @@ module Jekyll
       end
       commit_url += "</span>"
 
-      history_url + " -- " + commit_url
+      history_icon + " " + history_url + " &mdash; " + commit_url
     end
   end
 end
