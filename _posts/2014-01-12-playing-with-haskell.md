@@ -165,7 +165,7 @@ whatever.
 
 This gets us to the following in GHCi:
 
-```real
+```
 λ> parse json "" "[1,2,3]"
 Right 6
 λ> parse json "" "{\"key\":[1,3,5],\"keyz\":[{\"arrKey\":10}, 1, 4],\"whoa\":null}"
