@@ -21,8 +21,8 @@ involved with product infrastructure, both engineers and management, and across
 the different technology stacks: web, iOS, and Android, are incredibly talented.
 I was thoroughly pleased with the fact that I got to work along side them.
 So I just want to be clear that I didn't leave because I was pissed off at my
-team or my manager, or anything petty like that. The reasons I left are in
-no particular order are:
+team or my manager, or anything petty like that. The reasons I left, in
+no particular order, are:
 
 + Company Direction
 + Boredom
