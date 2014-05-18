@@ -50,7 +50,7 @@ from another actor would look like
 {% highlight erlang %}
 SomeGuyPid = spawn(some_guy, live, [[]]).
 SomeGuyPid ! {self(), {handshake, "Me"}}.
-{% endhighlight}
+{% endhighlight %}
 
 In Erlang, `self()` returns your own PID, this allows us to send messages to others and get
 replies back without them actually knowing who we are. This allows actors to be highly
