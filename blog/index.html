@@ -13,7 +13,7 @@ icon: fa-book
   <div class="content">
     {{ post.excerpt }}
   </div>
-  <p class="time">Reading Time: {{ post.content | reading_time | pluralize: "minute" }}</p>
+  <p class="time"><i class="fa fa-clock-o fa-fw fa-lg"></i> Reading Time: {{ post.content | reading_time | pluralize: "minute" }}</p>
 {% endfor %}
 
 <!-- Pagination links -->
