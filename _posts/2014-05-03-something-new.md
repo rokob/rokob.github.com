@@ -137,7 +137,7 @@ was looking for. I love going deep on a single problem, I know what it feels lik
 trust me. I don't really fully know what it is like to figuratively live or die based
 on how well you can do a ton of different things. I want that. I don't think I could
 truly get that at Facebook, nor do I think it should even be possible. The entire
-point of a well established and well run company is not abstract those things and
+point of a well established and well run company is to abstract those things and
 allow people to use their comparative advantages to help you win. I hope I can make
 my new company one that people say it is too easy to work here, but I want to be part
 of building that.
@@ -168,9 +168,9 @@ much, they both meet my needs and I only recently was promoted at Facebook to a 
 where my salary was actually a decent amount of money. I don't want to get into it
 too much here, but I made a poor decision and I think Facebook took advantage of my
 ignorance when I started to the point that I did get some stock but not enough to keep
-me interested in staying as if it was something that would be too much too lose in
+me interested in staying as if it was something that would be too much to lose in
 the aforementioned trade-off. If the startup I have gone to is even moderately successful
-I will stand to make more from equity that I would have gotten from Facebook over the
+I will stand to make more from equity than I would have gotten from Facebook over the
 same time period and the salary difference again will be marginal to non-existent.
 
 Let's consider the worst case scenario for me, something ridiculous happens where I work
@@ -198,8 +198,8 @@ I had been there longer than 68% of the current employees.
 I was hired at Facebook into the Finance org as a Quantitative Business Analyst, which
 is funny on many levels. Within a few months of my joining, Facebook hired Ken Rudin
 from Zynga to become the head of a new org known as Analytics. Well not exactly,
-but that is what eventually happened, I forget exact the organziation structure at
-the beginning, I went from Finance to Growth and then to Analytics, and my titled
+but that is what eventually happened, I forget exactly the organization structure at
+the beginning, I went from Finance to Growth and then to Analytics, and my title
 changed rather quickly to Data Scientist, which I will get back to. Nevertheless,
 my team had a meeting with my manager's manager's new manager, Ken, within his first
 week there. The result of this meeting was that I realized a few things: I was going
@@ -209,7 +209,7 @@ being. I was reassured that I did not need to leave, that nothing would actually
 because I had a manager insulating me from any real changes and he was determined to
 keep operating the same way. So I stopped looking for jobs and kept working. But slowly,
 things did change, it was always minor, I always complained about it, but the changes
-where never enough to really rage quit over so I kept going.
+were never enough to really rage quit over so I kept going.
 
 Eventually, I took a step back and looked at where Facebook stood in terms of the
 group of people looking at data and the goals/purpose of those teams. There has been a
@@ -218,27 +218,27 @@ that spent most of their time working on social science research with the intent
 of publishing a fair amount of their work. They also built some tools that are used
 across different teams in addition to spinning out a few teams dedicated to things
 like ensuring the systems used for measuring events was correct and scalable. At some
-point after the analytics org was formed, there was some policitcal manuvering and
+point after the analytics org was formed, there was some political maneuvering and
 some bickering which led to a new group of people getting the title Data Scientist.
 These were the people in the analytics org who had also gone through the engineering
 bootcamp when they joined. It was deemed that data scientists were just analysts who
 could also code. However, going through bootcamp and being able to code are not actually
-synonomous. The people at the top of analytics, being ignorant of what both data
-scientists and analysts do, made this decision mostly as a recruting tool. People at
+synonymous. The people at the top of analytics, being ignorant of what both data
+scientists and analysts do, made this decision mostly as a recruiting tool. People at
 other companies were being called data scientists and were turning down Facebook
-offers for roles as analytsts. So let them have the title. Well, this seriously
+offers for roles as analysts. So let them have the title. Well, this seriously
 offended the team formerly known as Data Science, but the reason was not understood
 by those who made this decision. The reason this is offensive has to do with guilt
 by association, roughly. If I interact with only one person with a particular title,
 say as an engineer working with a data scientist, and that person is terrible, I
-will natually view the next data scientist I come across in a slightly negative light.
+will naturally view the next data scientist I come across in a slightly negative light.
 Now that is generalizing, but everyone does it. I got this same type of stereotype
 applied to me when people found out I was in the analytics org because of the
 interactions they had had with analysts.
 
 I was not on the Data Science team, I didn't know there was a distinction before I
 joined Facebook. I was sold on the concept that it was all the same thing, just that
-I would mostly be working on problems realted to the product rather than writing
+I would mostly be working on problems related to the product rather than writing
 papers. This was fine with me because if I wanted to be writing papers I would have
 stayed in academics. However, I was misled, and things only got worse. The analytics
 org at Facebook has so many problems that I don't really want to go into all of them
