@@ -4,7 +4,7 @@ title: "Eloquent Objective-C: Write Code That Looks Like Objective-C"
 date: 2014-06-01 00:20:04
 categories: code
 tags: code objc eloquent
-published: true
+published: false
 ---
 
 When I look at someone's code, I immediately make a value judgment about the likelihood
