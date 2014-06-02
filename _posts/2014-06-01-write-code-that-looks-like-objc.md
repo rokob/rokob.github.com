@@ -4,7 +4,7 @@ title: "Eloquent Objective-C: Write Code That Looks Like Objective-C"
 date: 2014-06-01 00:20:04
 categories: code
 tags: code objc eloquent
-published: false
+published: true
 ---
 
 When I look at someone's code, I immediately make a value judgment about the likelihood
@@ -93,23 +93,98 @@ static NSArray* filterArrayWithBlock(NSArray *input, BOOL(^predicate)(id)) {
 This is just a toy function that would probably be better suited as a member of a category on `NSArray`
 which adds functional programming primitives like `map`, `reduce`, `filter`, etc. But you can declare
 pure functions like this within your implementation file, and then call it possibly passing in
-instance variables as arguments. There is no way that a subclass can override this behviour, plus you trivially
+instance variables as arguments. There is no way that a subclass can override this behaviour, plus you trivially
 can guarantee that you are not modifying the state of your object because the C function only has access
 to it's inputs, and you never should make `self` one of those inputs.
 
 I use methods in an "Internal" header to expose some things for tests. This is usually a smell I know,
 but sometimes it is the only bridge between tested and untested code before you go through a big refactor.
-I see this often with async interfaces that need to expose some synchronization to make tests reliable.
+I see this often with async interfaces that need to expose some synchronization to make
+tests reliable.
 
-## Dots and Brackets
+<br />
+<h2>Dots and Brackets</h2>
+
+If you are coming from Lisp then all the brackets everywhere should not make you too anxious, otherwise
+you probably were a bit thrown off initially about all the brackets. The dot syntax is used in a variety of
+other languages so it might innately feel like the right thing to use in many cases. Like all other parts
+of this post, consistency within a codebase is more important than your preferences, so even if you disagree
+with a certain use in a particular project, I suggest you be flexible rather than be "that guy". Nonetheless,
+there is a correct style to use here. The dot syntax should only be used for simple property getter/setters,
+and typically this usually means only outside of an implementation because you should be using instance
+variables directly inside an implementation (the one exception being to remain KVO compliant, however since you
+should never use KVO this is moot). The bracket syntax should be used for everything else. The only alternative
+style is to never use the dot syntax and use brackets everywhere. So, using the dot syntax to
+call a method is a bad thing.
+
+<div class="incorrect">
+{% highlight objc %}
+@interface SomeClass : NSObject
+@property (nonatomic, readwrite, copy) NSString *string;
+- (void)doIt;
+@end
+
+// Somewhere else
+SomeClass *someClass = SomeClass.alloc.init;
+someClass.doIt;
+
+// The next line is okay in isolation
+[someClass setString:@"Nope"];
+// but mixing the method call setter with the dot getter is inconsistent
+NSLog(@"%@", someClass.string);
+
+// WTF?
+UIColor *myColor = UIColor.blackColor;
+{% endhighlight %}
+</div>
+
+<div class="correct">
+{% highlight objc %}
+@interface SomeClass : NSObject
+@property (nonatomic, readwrite, copy) NSString *string;
+- (void)doIt;
+@end
+
+// Somewhere else
+SomeClass *someClass = [[SomeClass alloc] init];
+
+someClass.string = @"Yeah";
+NSLog(@"%@", someClass.string);
+
+[someClass doIt];
+{% endhighlight %}
+</div>
 
 ## Embrace Selector Keywords and Verbosity
+
+Objective-C is a verbose language, method calls can easily take up a lot of editor columns:
+
+{% highlight objc %}
+- (void)sendAction:(SEL)aSelector toObject:(id)anObject forAllCells:(BOOL)flag;
+{% endhighlight %}
+
+that is not a bad thing if you use it to your advantage. The parts of a selector
+that describe the argument is known as a keyword (this terminology comes from Smalltalk).
+In many other languages, keyword arguments are the exception not the rule. Have you ever
+seen a function call in C that looks like this:
+
+{% hightlight c %}
+sendMessage(obj, 0, false, false, NULL);
+{% endhighlight %}
+
+Sometimes people will throw in comments everywhere they call a function like this to explain
+what those random `false` arguments mean. This is terrible. This is partly just a product of
+poor design, but in Objective-C you are forced to make it look like:
+
+{% highlight objc %}
+[obj sendMessageWithIndex:0 shouldReply:NO isHappy:YES callback:NULL];
+{% endhighlight %}
 
 ## Use Pragmas Liberally
 
 ## If it looks like C, it's probably wrong
 
-## Do Not Use `new`
+## Do Not Use "new"
 
 ## What Others Have To Say
 
