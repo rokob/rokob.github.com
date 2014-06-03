@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Eloquent Objective-C: Write Code That Looks Like Objective-C"
-date: 2014-06-01 00:20:04
+date: 2014-06-01 00:20:04-0700
 categories: code
 tags: code objc eloquent
 ---
