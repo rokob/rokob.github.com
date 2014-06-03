@@ -167,7 +167,7 @@ that describe the argument is known as a keyword (this terminology comes from Sm
 In many other languages, keyword arguments are the exception not the rule. Have you ever
 seen a function call in C that looks like this:
 
-{% hightlight c %}
+{% highlight c %}
 sendMessage(obj, 0, false, false, NULL);
 {% endhighlight %}
 
