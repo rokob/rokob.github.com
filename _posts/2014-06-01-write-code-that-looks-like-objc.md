@@ -4,7 +4,6 @@ title: "Eloquent Objective-C: Write Code That Looks Like Objective-C"
 date: 2014-06-01 00:20:04
 categories: code
 tags: code objc eloquent
-published: false
 ---
 
 When I look at someone's code, I immediately make a value judgment about the likelihood
@@ -180,11 +179,34 @@ poor design, but in Objective-C you are forced to make it look like:
 [obj sendMessageWithIndex:0 shouldReply:NO isHappy:YES callback:NULL];
 {% endhighlight %}
 
+## Do Not Use "new"
+
+Use `[[SomeClass alloc] init]` instead of `[SomeClass new]`. Why? It is idiomatic Objective-C,
+and you can't extend `new` to do more for you like `initWithStuff:`.
+
 ## Use Pragmas Liberally
 
-## If it looks like C, it's probably wrong
+There is a preprocessor directive called "pragma" which Xcode picks up to define sections
+in the code navigator. The style is to use `#pragma` followed by the word `mark` and then
+some text. You can place a single dash to create a horizontal rule in the code navigator.
+If you put some text then it will show up as a bold header. It helps you to separate your methods
+in to useful sections without adding a bunch of comments, and it nicely gets picked up by
+Xcode.
 
-## Do Not Use "new"
+{% highlight objc %}
+#pragma mark -
+#pragma mark NSObject
+
+- (id)initWith...
+{
+  ...
+}
+
+#pragma mark -
+#pragma mark UIAlertViewDelegate
+
+- (void)...
+{% endhighlight %}
 
 ## What Others Have To Say
 
@@ -199,6 +221,13 @@ if there is clearly no consistent style, then work to get one enforced and the c
 as possible. I have my own style that I use on personal projects, which differed from the style at Facebook,
 but I always just kept the two separate. I think it is good to expose yourself to multiple styles because
 you can pick up the little bits that work better from each and merge them into something better.
+
+## And then Swift happened
+
+So I was watching the WWDC keynote this morning and Apple announced a new langauge, Swift. This will be the
+language for iOS and Mac development for the forseeable future. So all this talk about how to write
+Objective-C is going down the drain. So although there is a right way to write Objective-C, it doesn't
+matter much anymore. I'll have to start working on "Eloquent Swift"...
 
 [apple-guidelines]:  https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/CodingGuidelines/CodingGuidelines.html
 [google-objc]:       http://google-styleguide.googlecode.com/svn/trunk/objcguide.xml
