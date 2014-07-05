@@ -7,6 +7,11 @@ tags: life facebook clowntown
 excerpt: <p>There recently was a bit of controversy over a paper that was published by some researchers at Facebook. In the press there was mostly misinformation and alarmist pieces of yellow journalism. This post is about how my name was used to further the agenda of a disingenious Wall Street Jounal reporter by taking what I said out of context.</p>
 ---
 
+### On the title:
+
+Apparently it is non-obivous, but the title of this post is a jab at the way
+"news" is presented nowadays.
+
 ### Disclaimer:
 
 Anything contained within this post that resembles something that may or may not have
