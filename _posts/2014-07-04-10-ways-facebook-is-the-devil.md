@@ -146,11 +146,10 @@ Here are the emails between myself and the WSJ reporter if you want even more de
 around the context of the day that this story was published. The majority of our disucussion
 was on the phone, so I don't have word for word transcripts of that.
 
->From: Me
->To: reed.albergotti@wsj.com
->July 2, 2014 11:41am
->
->
+* From: Me
+* To: reed.albergotti@wsj.com
+* July 2, 2014 11:41am
+
 >I don't have time to talk on the phone, but if you have any questions you want answered
 >I would be happy to do so via email. I only am willing to say anything more if I can see
 >the entirety of whatever is written prior to publication.
@@ -161,11 +160,10 @@ was on the phone, so I don't have word for word transcripts of that.
 >misconception both internally and externally about the distinction, so whatever you want
 >to make of that is up to you.
 
->From: reed.albergotti@wsj.com
->To: Me
->July 2, 2014 11:48am
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* July 2, 2014 11:48am
+
 >ok, thanks for getting back to me. I’m planning on using more of the material we talked
 >about the other night. I can’t send you any article in its entirety before it is published,
 >as that’s a hard and fast rule at the WSJ, and really any newspaper.
@@ -177,11 +175,10 @@ was on the phone, so I don't have word for word transcripts of that.
 >I’m not totally clear on your point about the data science team. Did you work with the
 >data science team or were you totally separate from that team?
 
->From: Me
->To: reed.albergotti@wsj.com
->12:02pm
->
->
+* From: Me
+* To: reed.albergotti@wsj.com
+* 12:02pm
+
 >There was a larger organization known as Analytics, contained in this org were analysts
 >and data scientists that worked on different product areas, as well as a team known just
 >as 'Data Science' which also has data scientists. I was not on the Data Science team,
@@ -194,11 +191,10 @@ was on the phone, so I don't have word for word transcripts of that.
 >exists someone differently from other data scientists although the majority of the
 >time the work is the same.
 
->From: reed.albergotti@wsj.com
->To: Me
->12:07pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 12:07pm
+
 >Thanks for that. Facebook seems to refer to the larger analytics team as the “data science”
 >team, which they say has almost 40 people now. It also may have changed since you left.
 >
@@ -206,30 +202,27 @@ was on the phone, so I don't have word for word transcripts of that.
 >want to give me additional information, but I’d prefer to brief you on everything we might
 >use from our previous conversation before it runs in the paper.
 
->From: reed.albergotti@wsj.com
->To: Me
->2:12pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 2:12pm
+
 >There’s some chance this story could run on page one of tomorrow’s paper.
 >If you have a free minute, I’d love to run it by you for fact checking.
 
->From: reed.albergotti@wsj.com
->To: Me
->3:28pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 3:28pm
+
 >Facebook’s public relations team is saying that the experiment you worked on
 >that tested how users react when they’re locked out of the Facebook system never happened.
 >I told them I discussed it with you in detail and I’m ready to publish. But if
 >you want to discuss, please give me a ring in the next half hour or so.
 >I’m on cell at 212-327-3430.
 
->From: Me
->To: reed.albergotti@wsj.com
->3:59pm
->
->
+* From: Me
+* To: reed.albergotti@wsj.com
+* 3:59pm
+
 >I don't really have time to take a call basically any time today. All I can say to
 >that is they are lying or more likely there is some miscommunication about what you
 >are asking about. I did this as part of the site integrity team, it was not a piece of
@@ -244,11 +237,10 @@ was on the phone, so I don't have word for word transcripts of that.
 >products. I really would need to now the whole gist of what you are trying to say
 >about it before I would feel comfortable signing off.
 
->From: reed.albergotti@wsj.com
->To: Me
->4:02pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 4:02pm
+
 >Ok, I totally understand where you’re coming from, and I know you’re busy.
 >Literally the fastest way to do this would be to get on the phone.
 >I just ironed out the details on that site integrity thing with Facebook, so I am all good on that.
@@ -263,30 +255,27 @@ was on the phone, so I don't have word for word transcripts of that.
 >
 >I really think we could both benefit from a very brief phone discussion. I know you’re busy.
 
->From: reed.albergotti@wsj.com
->To: Me
->6:26pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 6:26pm
+
 >Hey, if you get any kind of response from Facebook, I want to hear about it, ok?
 >I really appreciate you talking to me. I know it didn't turn out to be that
 >pleasant of a day, but I think you really added a lot to the public's knowledge
 >about this and I really respect that.
 
->From: Me
->To: reed.albergotti@wsj.com
->8:42pm
->
->
+* From: Me
+* To: reed.albergotti@wsj.com
+* 8:42pm
+
 >You really took what I said out of context to put your own spin on things that
 >was very different than the sentiment that I expressed. I understand now why no
 >one wants to be honest with a reporter.
 
->From: reed.albergotti@wsj.com
->To: Me
->9:16pm
->
->
+* From: reed.albergotti@wsj.com
+* To: Me
+* 9:16pm
+
 >Sorry you feel that way.
 
 
