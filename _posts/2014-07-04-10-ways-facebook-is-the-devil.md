@@ -91,7 +91,7 @@ a joint effort between internal and external researchers to understand how Faceb
 in general can be more compassionate. I am a bit taken aback by the fact that the most recent paper has
 gotten as much press as it has, when the work done as part of the compassion research days has never been
 mentioned. Some of these papers are based on experiments that influence people's behavior in similar ways,
-but I guess they do not have as much cache for whatever reason.
+but I guess they do not have as much cachet for whatever reason.
 
 There has always been a lot of ethical discussions around experiments being run. From the simplistic,
 i.e. will this be disruptive in a way that would simply annoy users, to the more complex, i.e.
@@ -149,7 +149,16 @@ Consider reading the following articles for more reasonable opinions about this 
 
 Here are the emails between myself and the WSJ reporter if you want even more detailed information
 around the context of the day that this story was published. The majority of our disucussion
-was on the phone, so I don't have word for word transcripts of that.
+was on the phone, so I don't have word for word transcripts of that. Note, some lines have been
+removed from these emails as I did not feel they actually added any extra information, these
+are in fact not the exact emails, but nothing has been altered other than removing a couple lines.
+The lines I removed had to do with the fact that I asked to be quoted as "Dr. Ledvina" instead
+of "Mr. Ledvina" as well as the fact that I reached out to other former data scientists but
+told the reporter that they did not want to speak as they thought it might be seen as going
+behind the back of the people who currently work at FB. The only question I asked these people
+was "A guy from the WSJ wants to talk to data scientists from FB, you interested?" They meant
+simply that talking to a reporter at all was going behind someone's back, not that they nor I
+actually knew the actually gist of the story that was to be written.
 
 * From: Me
 * To: reed.albergotti@wsj.com
