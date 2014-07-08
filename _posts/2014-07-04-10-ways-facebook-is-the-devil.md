@@ -4,19 +4,44 @@ title: "10 ways Facebook is actually the devil"
 date: 2014-07-04 15:33:27
 categories: code
 tags: life facebook clowntown
-excerpt: <p>There recently was a bit of controversy over a paper that was published by some researchers at Facebook. In the press there was mostly misinformation and alarmist pieces of yellow journalism. This post is about how my name was used to further the agenda of a disingenious Wall Street Jounal reporter by taking what I said out of context.</p>
+excerpt: <p>There recently was a bit of controversy over a paper that was published by some researchers at Facebook. In the press there was mostly misinformation and alarmist pieces of yellow journalism. This post is about how my name was used to further the agenda of a disingenuous Wall Street Journal reporter by taking what I said out of context.</p>
 ---
+
+## Read This First (added later)
+
+This post was never intended to be a justification of Facebook or of
+the arbitrary experimentation that is done at all web service companies.
+The underlying theme was to ask the question why are the people who are making
+the most noise making that noise now? Other experiments and questionable
+practices from inside Google, Amazon, and Facebook have been made public
+before and the level of furor was nothing like this. This is a small fraction
+of the news that the recent NSA revelations has gotten, but it is still
+pretty close. That is something that many people have basically known was
+going on for years and no one said anything about it until someone from
+the inside brought out proof. Maybe that is metaphorically why this is
+easier to hold on to and point at, but what I say below is more of a
+question of why the people who claim
+to care the most about this have not been louder. Maybe they have been trying
+to and finally people are listening. Either way, from my point of view, this
+public discourse on the ethics of experimentation seems new, and I am just
+trying to say why now? I do understand why people are upset, I don't think
+this particular test was unethical because of the minimal risk of real harm
+being to done to participants which is generally accepted by university
+internal review boards as one case where consent is unnecessary. This post
+was never intended to say that something is okay (or not okay), it was only
+intended to put the words attributed to me within the context that I said
+them which I guess is even less clear than I thought.
 
 ### On the title:
 
-Apparently it is non-obivous, but the title of this post is a jab at the way
+Apparently it is non-obvious, but the title of this post is a jab at the way
 "news" is presented nowadays.
 
 ### Disclaimer:
 
 Anything contained within this post that resembles something that may or may not have
 actually happened at Facebook while I worked there is purely coincidental and does not
-consitute a breach of a non-disclosure agreement which may or may not exist between
+constitute a breach of a non-disclosure agreement which may or may not exist between
 myself and said company.
 
 ## The Short Version
@@ -52,7 +77,7 @@ were twisted around and basically pieced together from two different sentences t
 all of them got the tone and nuance completely opposite of what I actually said. I talked to the guy who wrote
 that story for more than half an hour from which he pulled that handful of quotes. He definitely spun the words
 I technically did say to further his ends of painting Facebook in a negative light. I am going to try and
-speak here to how I actually feel about things and if you recoginze some quotes you will see the context
+speak here to how I actually feel about things and if you recognize some quotes you will see the context
 from which they came.
 
 While I was at Facebook, there was no institutional review board that scrutinized the decision to
@@ -112,7 +137,7 @@ of these issues enough, but the only thing I see changing from this is not wheth
 will be run, but rather will they be published. Similar experiments have been and will continue to be
 run, but you probably just won't see a paper about it anymore. That is a real shame because Facebook
 and the data it has has been able to advance social psychology by quantum leaps over the past decade
-and this furor will undoubtably slow that advance.
+and this furor will undoubtedly slow that advance.
 
 I don't mind being quoted or not, in fact I would probably prefer not to be as I really don't want to
 be putting my name out there attached to something that could be misconstrued by my friends who still
@@ -291,6 +316,17 @@ actually knew the actually gist of the story that was to be written.
 * 9:16pm
 
 >Sorry you feel that way.
+
+
+### Copyright
+
+All rights reserved. No part of this post may be reproduced or transmitted in
+any form or by any means, electronic or mechanical, without the express written
+consent from the author.
+
+In other words, stop quoting me and stop quoting this blog post to further
+your agenda. If you want to do so, you have to ask me first. This includes
+not-for-profit as well as for-profit uses.
 
 
 [compassion]:    https://www.facebook.com/events/230652223766114/
