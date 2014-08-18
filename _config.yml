@@ -3,6 +3,7 @@ markdown: redcarpet
 safe: false
 lsi: false
 pygments: true
+highlighter: pygments
 timezone: America/Los_Angeles
 paginate: 5
 paginate_path: "blog/page:num"
