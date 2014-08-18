@@ -23,7 +23,7 @@ module Jekyll
     private
       def ghc_eval(line, mod)
         result = ""
-        IO.popen("ghc -e '#{line}' #{mod}") do |f|
+        IO.popen("ghc -e \"#{line}\" #{mod}") do |f|
           result = f.gets
         end
         result.strip
