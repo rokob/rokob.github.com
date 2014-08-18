@@ -28,6 +28,7 @@ module Jekyll
         content.split("\n").each do |line|
           haskell_line = line =~ /^> /
           blank_line = line =~ /^\s*$/
+          octothorpe_line = line =~ /^\\#.*/
           case
           when haskell_line && code_block
             if last_line_was_blank
@@ -50,7 +51,13 @@ module Jekyll
             last_line_was_blank = false
             output << CODE_END
             output << ''
-            output << line
+            if octothorpe_line
+              output << line[1..-1]
+            else
+              output << line
+            end
+          when octothorpe_line
+            output << line[1..-1]
           else
             output << line
           end
