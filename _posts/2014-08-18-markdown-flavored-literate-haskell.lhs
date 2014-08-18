@@ -40,9 +40,9 @@ blog generation pass and embed the results directly in the page. Without further
 
 {% ghci %}
 :t myfact
-myfact 100
+myfact 10
 :t myfact'
-myfact' 100
+myfact' 10
 {% endghci %}
 
 That is pretty cool in my opinion. The output here is actually probably not that
