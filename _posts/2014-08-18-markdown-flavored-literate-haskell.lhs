@@ -49,3 +49,5 @@ That is pretty cool in my opinion. The output here is actually probably not that
 cool, but if you look at the source and then at the output, the fact that all I had
 to do was run `jekyll build` in order to get all of this put together is pretty neat.
 You can see the plugins in the git repo for this blog on the `source` branch.
+
+[tapl]: http://www.cis.upenn.edu/~bcpierce/tapl/
