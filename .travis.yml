@@ -1,5 +1,4 @@
 language: ruby
-cache: bundler
 rvm:
   - 2.0.0
 env:
@@ -10,8 +9,14 @@ branches:
     - source
 before_script:
   - sudo apt-get update -qq
+install:
   - sudo apt-get install ghc
   - sudo apt-get install haskell-platform
+  - bundle install --path vendor/bundle
+cache:
+ bundler: true
+ directories:
+   - vendor/bundle
 script: jekyll build
 after_success:
   - ./deploy.sh setup
