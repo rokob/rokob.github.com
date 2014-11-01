@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REMOTE_LOCATION="@github.com:rokob/rokob.github.com.git"
+REMOTE_LOCATION="@github.com/rokob/rokob.github.com.git"
 SITE="_site"
 DEPLOY="deploy/"
 
@@ -35,9 +35,9 @@ setup() {
   info "established master branch"
   if [ $TRAVIS ]
   then
-    git remote add origin "git:${GH_TOKEN}${REMOTE_LOCATION}"
+    git remote add origin "https://rokob:${GH_TOKEN}${REMOTE_LOCATION}"
   else
-    git remote add origin "git${REMOTE_LOCATION}"
+    git remote add origin "https://rokob${REMOTE_LOCATION}"
   fi
   info "established git remote"
 
