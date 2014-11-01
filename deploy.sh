@@ -39,6 +39,17 @@ setup() {
   success "setup complete"
 }
 
+travis_setup() {
+  git config user.name "$GIT_NAME"
+  git config user.email "$GIT_EMAIL"
+  git config credential.helper "store --file=.git/credentials"
+  echo https://$GH_TOKEN:@github.com > .git/credentials
+}
+
+travis_teardown() {
+  rm .git/credentials
+}
+
 deploy() {
   COMMIT=$(git log -1 HEAD --pretty=format:%H)
   SHA=${COMMIT:0:8}
@@ -58,6 +69,11 @@ deploy() {
 
   cd $DEPLOY
 
+  if [ $TRAVIS ]
+  then
+    travis_setup()
+  fi
+
   git add --all .
   info "added files to git"
 
@@ -66,6 +82,11 @@ deploy() {
 
   git push origin master --force -q
   success "deployed site"
+
+  if [ $TRAVIS ]
+  then
+    travis_teardown()
+  fi
 }
 
 case "$1" in

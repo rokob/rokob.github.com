@@ -17,12 +17,4 @@ install:
 script: jekyll build
 after_success:
   - ./deploy.sh setup
-  - git config user.name
-  - echo $GIT_NAME
-  - "git config user.name $GIT_NAME"
-  - git config user.name
-  - "git config user.email $GIT_EMAIL"
-  - git config credential.helper "store --file=.git/credentials"
-  - "echo https://$GH_TOKEN:@github.com > .git/credentials"
   - ./deploy.sh deploy
-  - rm .git/credentials
