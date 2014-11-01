@@ -71,7 +71,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
-    travis_setup()
+    travis_setup
   fi
 
   git add --all .
@@ -85,7 +85,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
-    travis_teardown()
+    travis_teardown
   fi
 }
 
