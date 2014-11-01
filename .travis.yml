@@ -12,6 +12,7 @@ before_install:
 install:
   - sudo apt-get install ghc
   - sudo apt-get install haskell-platform
+  - bundle install
 script: jekyll build
 after_success:
   - ./deploy.sh setup
