@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-REMOTE="git@github.com:rokob/rokob.github.com.git"
+REMOTE_LOCATION="@github.com:rokob/rokob.github.com.git"
 SITE="_site"
 DEPLOY="deploy/"
 
@@ -33,7 +33,12 @@ setup() {
   info "initialized git"
   git checkout --orphan master -q
   info "established master branch"
-  git remote add origin $REMOTE
+  if [ $TRAVIS ]
+  then
+    git remote add origin "git:${GH_TOKEN}${REMOTE_LOCATION}"
+  else
+    git remote add origin "git${REMOTE_LOCATION}"
+  fi
   info "established git remote"
 
   success "setup complete"
@@ -71,7 +76,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
-    echo "setting up travis"
+    info "setting up travis"
     travis_setup
   fi
 
@@ -86,7 +91,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
-    echo "tearing down travis"
+    info "tearing down travis"
     travis_teardown
   fi
 }
