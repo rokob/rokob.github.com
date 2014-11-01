@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+  - 2.0.0
+branches:
+  only:
+    - source
+script: true
+before_install:
+  - sudo apt-get update -qq
+install:
+  - sudo apt-get install haskell-platform
+after_success:
+  - "./deploy.sh setup"
+  - "./deploy.sh deploy"
