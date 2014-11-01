@@ -67,7 +67,7 @@ deploy() {
 
   info "building site"
   
-  jekyll build > /dev/null
+  bundle exec jekyll build > /dev/null
   
   cp -r "$SITE"/* $DEPLOY
   info "copied $SITE into $DEPLOY"

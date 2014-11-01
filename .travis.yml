@@ -12,12 +12,12 @@ before_script:
 install:
   - sudo apt-get install ghc
   - sudo apt-get install haskell-platform
-  - bundle install --path vendor/bundle
+  - bundle install --path _vendor/bundle
 cache:
  bundler: true
  directories:
-   - vendor/bundle
-script: jekyll build
+   - _vendor/bundle
+script: bundle exec jekyll build
 after_success:
   - ./deploy.sh setup
   - ./deploy.sh deploy
