@@ -1,9 +1,10 @@
+language: ruby
+cache: bundler
+rvm:
+  - 2.0.0
 env:
   global:
     - secure: "PRnyGxQLuPen15CA8vipjYZwofVvxr9AwGnqfwo9skwagjQXy2ZyXFoN7wpSEIdRDJlgdJ1u3vomFzPQ43AAL4SY76lHotN6jT75GV3Z4R6pN0I8nMyT2A4lJZVjjUFE+JCfxyXn+H+VhNb3isXmIqMURniZbnTQIeXE71Oe7JQ="
-language: ruby
-rvm:
-  - 2.0.0
 branches:
   only:
     - source
@@ -16,10 +17,12 @@ install:
 script: jekyll build
 after_success:
   - ./deploy.sh setup
-  - git config user.name $GIT_NAME
-  - git config user.email $GIT_EMAIL
+  - git config user.name
+  - echo $GIT_NAME
+  - "git config user.name $GIT_NAME"
+  - git config user.name
+  - "git config user.email $GIT_EMAIL"
   - git config credential.helper "store --file=.git/credentials"
-  - echo https://$GH_TOKEN:@github.com > .git/credentials
+  - "echo https://$GH_TOKEN:@github.com > .git/credentials"
   - ./deploy.sh deploy
   - rm .git/credentials
-
