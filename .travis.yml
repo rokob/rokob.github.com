@@ -8,12 +8,10 @@ env:
 branches:
   only:
     - source
-before_install:
+before_script:
   - sudo apt-get update -qq
-install:
   - sudo apt-get install ghc
   - sudo apt-get install haskell-platform
-  - bundle install
 script: jekyll build
 after_success:
   - ./deploy.sh setup
