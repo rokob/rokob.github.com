@@ -40,10 +40,10 @@ setup() {
 }
 
 travis_setup() {
-  git config user.name "$GIT_NAME"
-  git config user.email "$GIT_EMAIL"
+  git config --global user.name "$GIT_NAME"
+  git config --global user.email "$GIT_EMAIL"
   git config credential.helper "store --file=.git/credentials"
-  echo https://$GH_TOKEN:@github.com > .git/credentials
+  echo "https://${GH_TOKEN}:@github.com" > .git/credentials
 }
 
 travis_teardown() {
@@ -71,6 +71,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
+    echo "setting up travis"
     travis_setup
   fi
 
@@ -85,6 +86,7 @@ deploy() {
 
   if [ $TRAVIS ]
   then
+    echo "tearing down travis"
     travis_teardown
   fi
 }
