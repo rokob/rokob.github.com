@@ -2,7 +2,7 @@
 
 REMOTE_LOCATION="@github.com/rokob/rokob.github.com.git"
 SITE="_site"
-DEPLOY="deploy/"
+DEPLOY="_deploy/"
 
 info() {
   printf "  \033[00;32m+\033[0m $1\n"
