@@ -5,6 +5,8 @@ require 'yaml'
 
 module PostGen
   class PostGen
+    SEPARATOR = '---'
+
     def self.run
       gen = PostGen.new
       gen.gather_info
@@ -17,7 +19,9 @@ module PostGen
 
     def gather_info
       ask('Title') {|t| @title = t}
+      puts self.class.gather_groupings('categories')
       ask('Category') {|c| @categories = c.split}
+      puts self.class.gather_groupings('tags')
       ask('Tags') {|g| @tags = g.split}
     end
 
@@ -47,12 +51,34 @@ module PostGen
       frontmatter.to_yaml
     end
 
+    def self.gather_groupings(type='tags', dir='./_posts')
+      tags = []
+      Dir.foreach(dir) do |name|
+        next if name.start_with? '.'
+        File.open("#{dir}/#{name}", 'r') do |f|
+          first_line = f.readline.chomp
+          if first_line == SEPARATOR
+            end_of_front_matter = false
+            until end_of_front_matter
+              line = f.readline.chomp
+              end_of_front_matter = line == SEPARATOR
+              if !end_of_front_matter
+                if line.start_with? "#{type}: "
+                  tags |= line.split("#{type}: ")[1].split
+                end
+              end
+            end
+          end
+        end
+      end
+      "#{type.capitalize}: #{tags.join(', ')}"
+    end
+
     def output(dir='_posts')
       filename = File.join(dir, gen_filename(@title))
-      separator = '---'
       File.open(filename, 'w') do |f|
         f.puts frontmatter
-        f.puts separator
+        f.puts SEPARATOR
         f.puts
       end
     end
@@ -70,3 +96,4 @@ module PostGen
 end
 
 PostGen::PostGen.run
+
