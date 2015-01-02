@@ -3,7 +3,7 @@ layout: post
 title: End of an era
 date: '2014-12-19 17:12:07'
 categories: life
-tags: life, moving, relationships
+tags: life moving relationships
 ---
 
 It has officially been over a month now so I feel ready to write about this,
