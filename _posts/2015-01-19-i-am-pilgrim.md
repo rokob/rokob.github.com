@@ -19,13 +19,13 @@ artistic book, with complicated allegories or an overwhelmingly
 emotional presence. No, it was just simply the type of book
 that you can't put down. You just need to know what is going
 to happen around the next corner. One book I really enjoyed
-from my adolescence was [*Rainbow Six*]. What got me about that
+from my adolescence was *Rainbow Six*. What got me about that
 one was how there were so many different story lines going on
 at once that seemed altogether unrelated. If you haven't read
 it, I am sorry to break the news to you here, but when all
 of those stories collide, I felt one of those moments of awe
 as if seeing someone perform a complicated athletic feat yet
-make it look effortless. [*I Am Pilgrim*] wove a similar
+make it look effortless. *I Am Pilgrim* wove a similar
 narrative. I don't think it was quite as good in that there were
 less stories going on, but the overall effect was similar.
 
