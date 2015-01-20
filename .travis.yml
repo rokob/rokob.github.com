@@ -13,10 +13,7 @@ install:
   - sudo apt-get install ghc
   - sudo apt-get install haskell-platform
   - bundle install --path _vendor/bundle
-cache:
- bundler: true
- directories:
-   - _vendor/bundle
+cache: bundler
 script: bundle exec jekyll build
 after_success:
   - ./deploy.sh setup
