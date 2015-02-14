@@ -71,7 +71,7 @@ module PostGen
           end
         end
       end
-      "#{type.capitalize}: #{tags.join(', ')}"
+      "#{type.capitalize}: #{tags.sort.join(', ')}"
     end
 
     def output(dir='_posts')
