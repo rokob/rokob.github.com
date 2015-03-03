@@ -6,7 +6,7 @@ categories: book
 tags: book good nonfiction society
 ---
 
-[*The Short and Tragic Life of Robert Peace*][http://amzn.com/B00GEEB7LC] is another
+[*The Short and Tragic Life of Robert Peace*][peace-amazon] is another
 book that made it's way onto my list via being a top rated book on Amazon. I am
 really glad that I decided to read it, because to be frank, the subject matter
 did not jump out at me as all that interesting. All I could tell from the title
