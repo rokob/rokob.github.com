@@ -49,7 +49,6 @@ travis_setup() {
   git config --global user.email "$GIT_EMAIL"
   git config credential.helper "store --file=.git/credentials"
   echo "https://${GH_TOKEN}:@github.com" > .git/credentials
-  info "set-up complete with ${GIT_NAME}, ${GIT_EMAIL}, and ${GH_TOKEN}"
 }
 
 travis_teardown() {
