@@ -3,7 +3,7 @@ layout: post
 title: The Girl on the Train
 date: '2015-05-17 18:05:52'
 categories: book
-tags: book, crime, good, fiction, thriller
+tags: book crime good fiction thriller
 ---
 
 The Amazon lists of top books seems to be a bit hit or miss with me, but
