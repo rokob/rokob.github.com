@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: Masters of Chaos
 date: 2015-06-20 16:06:39

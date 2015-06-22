@@ -1,4 +1,4 @@
---- 
+---
 layout: post
 title: A Small Indiscretion
 date: 2015-06-22 14:06:43

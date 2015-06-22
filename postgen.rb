@@ -110,11 +110,11 @@ module PostGen
         next if name.start_with? '.'
         File.open("#{dir}/#{name}", 'r') do |f|
           data = {date: nil, categories: [], tags: []}
-          first_line = f.readline.chomp
+          first_line = f.readline.chomp.strip
           if first_line == SEPARATOR
             end_of_front_matter = false
             until end_of_front_matter
-              line = f.readline.chomp
+              line = f.readline.chomp.strip
               end_of_front_matter= line == SEPARATOR
               if !end_of_front_matter
                 if line.start_with? "date: "
