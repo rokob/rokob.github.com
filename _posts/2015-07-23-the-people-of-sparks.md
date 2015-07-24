@@ -4,7 +4,6 @@ title: The People of Sparks
 date: 2015-07-23 18:07:59
 categories: book
 tags: book fiction okay scifi
-published: false
 ---
 
 After reading *The City of Ember*, I was sufficiently
