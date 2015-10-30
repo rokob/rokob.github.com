@@ -1,3 +1,4 @@
+sudo: false
 language: ruby
 rvm:
   - 2.0.0
@@ -7,17 +8,12 @@ env:
 branches:
   only:
     - source
-sudo: false
 addons:
   apt:
     packages:
       - ghc
       - haskell-platform
-#before_script:
-#  - sudo apt-get update -qq
 install:
-#  - sudo apt-get install ghc
-#  - sudo apt-get install haskell-platform
   - bundle install --path _vendor/bundle
 cache: bundler
 script: bundle exec jekyll build
