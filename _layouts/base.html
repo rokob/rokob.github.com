@@ -20,7 +20,7 @@
         <p>all the things</p>
 
         {% for page in site.pages %}
-          {% if page.url contains 'blog/page' %}
+          {% if page.url contains 'blog/page' or page.url contains 'tag' %}
           {% else %}
             <p class="view"><i class="fa {{ page.icon }} fa-fw"> </i><a href="{{ site.url }}{{ page.url }}">  {{ page.title }}</a></p>
           {% endif %}
