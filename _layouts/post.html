@@ -11,7 +11,7 @@ layout: base
 {% if page.categories.count > 1 %}Categories:{% else %}Category:{% endif %} {{ page.categories | join: ',  ' }} 
 </div>
 <div class="tags">
-<i class="fa fa-tags fa-lg"></i> {{ page.tags | join: ',  ' }} 
+<i class="fa fa-tags fa-lg"></i> {{ page.tags | tag_link | join: ',  ' }} 
 </div>
 <div class="commit">
 {% commit rokob/rokob.github.com %}
