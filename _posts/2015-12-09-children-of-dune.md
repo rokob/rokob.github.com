@@ -8,7 +8,7 @@ tags: book fiction great scifi
 
 Wow, *Dune* was long, a bit complex, and good; *Dune Messiah* was
 similarly good, with a bit more complexity; [*Children of Dune*][child-amazon]
-took the complexity up a notch and really rounded out the triology
+took the complexity up a notch and really rounded out the trilogy
 quite well. I now feel that you have to read all three to really
 appreciate the first novel.
 
