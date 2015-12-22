@@ -6,11 +6,14 @@ require 'yaml'
 module PostGen
   class PostGen
     SEPARATOR = '---'
+    RANKINGS  = %w{bad okay good great}
 
     def self.run(args)
       if args.length > 0
         if args[0] == 'book_info'
           gather_book_info
+        elsif args[0] == 'calendar'
+          output_calendar
         end
       else
         gen = PostGen.new
@@ -66,10 +69,28 @@ module PostGen
     end
 
     def self.gather_book_info(dir='./_posts')
+      counts, rank_counts, tags = normalize_data(dir)
+      puts "Total count: #{counts.values.reduce(&:+)}"
+      puts
+      puts "By month:"
+      output_by_month(counts)
+      puts
+      puts "Tags:"
+      tags.keys.sort.each do |tag|
+        puts "#{tag}: #{tags[tag]}"
+      end
+      puts
+      puts "Ratings:"
+      RANKINGS.each do |rank|
+        puts "#{rank}: #{rank_counts[rank]}"
+      end
+      puts
+    end
+
+    def self.normalize_data(dir='./_posts')
       tags = Hash.new(0)
-      rankings = %w{bad okay good great}
       rank_counts = {}
-      rankings.each do |rank|
+      RANKINGS.each do |rank|
         rank_counts[rank] = 0
       end
       counts = Hash.new(0)
@@ -77,7 +98,7 @@ module PostGen
         if data[:categories].include? 'book'
           data[:tags].each do |tag|
             next if tag == 'book'
-            if rankings.include? tag
+            if RANKINGS.include? tag
               rank_counts[tag] += 1
             else
               tags[tag] += 1
@@ -86,23 +107,18 @@ module PostGen
           counts[data[:date].strftime('%Y-%m')] += 1
         end
       end
-      puts "Total count: #{counts.values.reduce(&:+)}"
-      puts
-      puts "By month:"
+      [counts, rank_counts, tags]
+    end
+
+    def self.output_calendar
+      counts, _, _ = normalize_data
+      output_by_month(counts)
+    end
+
+    def self.output_by_month(counts)
       counts.keys.sort.each do |date|
         puts "#{date}: #{counts[date]}"
       end
-      puts
-      puts "Tags:"
-      tags.keys.sort.each do |tag|
-        puts "#{tag}: #{tags[tag]}"
-      end
-      puts
-      puts "Ratings:"
-      rankings.each do |rank|
-        puts "#{rank}: #{rank_counts[rank]}"
-      end
-      puts
     end
 
     def self.walk_posts(dir='./_posts')
