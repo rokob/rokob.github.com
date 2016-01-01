@@ -23,9 +23,9 @@ end
 
 def css(data)
   max = get_max(data)
-  width = 300
+  width = 280
   height = 100
-  each_width = (300.0/data.count).round(4) - 1
+  each_width = (width/data.count).round(4) - 1
   color = "#2c3e50"
   css  = ".chart { width: #{width}px;height:#{height}px;background-color:#fff;"
   css += "margin: 0px; padding: 0px;}"
