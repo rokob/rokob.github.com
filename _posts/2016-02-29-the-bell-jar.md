@@ -23,7 +23,7 @@ is that she succeeded in killing herself before writing another novel which
 could have really allowed her to stretch her abilities.
 
 I highly recommend this book, although I will say it may be a tough read
-from a metaphysical perspective. There are a lot of depressing scenes
+from an existential perspective. There are a lot of depressing scenes
 and themes that make you mentally have to work to distance yourself a bit
 lest you fall victim to the same bell jar that the title represents. That
 could be just my opinion as my mind has a tendancy to run wild when presented
