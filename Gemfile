@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
 
-gem 'jekyll', '~> 2.4.0'
+gem 'jekyll', '~> 3.1.0'
+gem 'jekyll-paginate'
+gem 'pygments.rb'
+gem 'redcarpet'
 gem 'nokogiri'

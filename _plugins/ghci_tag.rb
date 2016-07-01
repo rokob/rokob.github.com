@@ -8,7 +8,7 @@ module Jekyll
     def render(context)
       lines_to_execute = super
       site = context.registers[:site]
-      converter = site.getConverterImpl(Jekyll::Converters::Markdown)
+      converter = site.find_converter_instance(Jekyll::Converters::Markdown)
       mod = context.environments[0]['page']['path']
       result = lines_to_execute.split("\n").map do |line|
         if line != ''
