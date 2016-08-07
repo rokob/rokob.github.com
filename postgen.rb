@@ -44,7 +44,7 @@ module PostGen
     end
 
     def get_datestring
-      @date.strftime('%Y-%m-%d %H:%m:%S')
+      @date.iso8601
     end
 
     def frontmatter
@@ -150,7 +150,9 @@ module PostGen
               if !end_of_front_matter
                 if line.start_with? "date: "
                   date = line.split("date: ")[1]
-                  data[:date] = Date.parse(line.split("date: ")[1], '%Y-%m-%d %H:%m:%S')
+                  datestring = line.split("date: ")[1]
+                  data[:date]   = Date.parse(datestring, '%Y-%m-%d %H:%m:%S')
+                  data[:date] ||= Date.parse(datestring, '%FT%T')
                 end
                 ['categories', 'tags'].each do |type|
                   if line.start_with? "#{type}: "

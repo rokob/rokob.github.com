@@ -4,3 +4,5 @@ _deploy
 deploy/*
 deploy/
 deploy
+.python-version
+
