@@ -56,5 +56,5 @@ the talk of hackers and binary, but I suppose to someone who does not write code
 be less burdensome. 
 
 
-[amazon-snow]:      http://PUTSOMETHINGHERE.com
+[amazon-snow]:      https://amzn.com/B000FBJCJE
 
