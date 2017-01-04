@@ -7,7 +7,7 @@ tags: book good life nonfiction death
 ---
 
 I have delayed writing this post for over a month now. I read
-[*The Tibetan Book of Living and Dying][tibet-amazon] because the *Tibetan Book of the Dead* was
+[*The Tibetan Book of Living and Dying*][tibet-amazon] because the *Tibetan Book of the Dead* was
 always on my list of books to read. However, after reading about reading that, I found the
 recommendation for an outsider to read the former book as it is much more approachable and useful
 than the latter. I am glad I made this choice because even this book was a bit unuseful at times
