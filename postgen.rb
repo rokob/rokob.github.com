@@ -179,7 +179,7 @@ module PostGen
     end
 
     def parameterize(str)
-      str.downcase.split.join('-')
+      str.gsub(/[^A-Za-z0-9]/,' ').downcase.split.join('-')
     end
 
     def ask(prompt)
