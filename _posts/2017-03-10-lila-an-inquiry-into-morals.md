@@ -7,7 +7,7 @@ tags: book good nonfiction philosophy
 ---
 
 Written by the author of *Zen and The Art of Motorcycle Maintenance*, [*Lila: An Inquiry Into
-Morals*](lila-amazon) is the next step in a philosophical system based on quality. This is the
+Morals*][lila-amazon] is the next step in a philosophical system based on quality. This is the
 metaphysics that was missing from the former book. I feel the latter book stands by itself, but to
 really grasp what is going on it certainly was helpful to have read the first book.
 
