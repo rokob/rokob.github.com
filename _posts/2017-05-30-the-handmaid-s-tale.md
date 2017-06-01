@@ -7,7 +7,7 @@ tags: book fiction great scifi
 ---
 
 Taya started watching the Hulu show based on this book, and before I wanted to watch it I had to
-read the book, so I picked up [*The Handmaid's Tale][handmaid-amazon] and got to work. Due to recent
+read the book, so I picked up [*The Handmaid's Tale*][handmaid-amazon] and got to work. Due to recent
 developments in politics, this book as well as *1984* are once again best sellers, and after having
 read this one I can understand why.
 
