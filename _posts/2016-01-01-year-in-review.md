@@ -87,7 +87,7 @@ desire to read certain books because they are classics or must reads. It is
 okay to work some of those in, but whenever I tried to read things like that
 back to back, I was inevitably frustrated. Furthermore, I enjoy fiction,
 so I found that choosing non-fiction was even more of a delicate process.
-I really had to pick the write books and read them at the write time with
+I really had to pick the right books and read them at the right time with
 enough cushion between them that I needed to keep from getting stuck.
 
 Aside from just reading this year, I also had a few slightly larger life
