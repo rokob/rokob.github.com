@@ -42,7 +42,7 @@ quickly, but that isn't the same thing as being analytical in a non-pressure sit
 hand you might think to yourself, gee I'm smarter than these guys I should be able to handle these
 situations. You can answer all the questions in the classroom about what to do in certain
 malfunction scenarios. But, on the other hand, once you are out the door, the important part is your
-ability to handle sensory overload and still have a functioning brain. So you might think your
+ability to handle sensory overload and still have a functioning brain. So you might think you're
 smarter than some skydivers, and you may very well have more raw intelligence, but that means jack
 shit when it comes to your initial ability to skydive. It teaches you not to judge people based on
 your preconceptions of what matters. There are certain aspects where intelligence will benefit you,
@@ -51,11 +51,11 @@ component so being athletic is also clearly useful, but only insomuch as it does
 overconfident.
 
 My previous experience in different sports has actually been arguably detrimental to my skydiving. I
-learned that you push as hard as you can and when you fail, you might get hurt, but you just get up,
+learned in those sports that you push as hard as you can and when you fail, you might get hurt, but you just get up,
 dust yourself off, and try again. This works in football, track & field, triathlon, etc. In
 skydiving this can get you killed or seriously injured. It requires a lot more mental assessment and
 skill building within your limits because the consequences of going beyond yourself are much worse.
-There is still a saying that if you are going to be dumb you better be tough. There are still plenty
+Skydiving does still have a saying that "if you are going to be dumb you better be tough." There are plenty
 of military attitudes where people just push it and walk it off. But as you progress through the
 sport, you only make it out the other side if you learn to be smart about managing risk as well as
 being lucky and tough when you invariably do make mistakes.
@@ -71,7 +71,7 @@ student on their own understanding of what is good and bad. Making mistakes is o
 natural born skydiver, but you have to be able to recognize those mistakes. If you think you are
 amazing and you are telling the instructor they are wrong, you aren't going to last long.
 
-I failed one level during AFF, which is the first 8 jumps. I think it was the 7th jump. I went from
+I failed one level during AFF, which is the first 7 jumps. It was the 7th jump. I went from
 overwhelmed to budding confidence to the beginning of complacency in 7 jumps. The jump itself went
 exactly as planned. The exit went well, the manuevers were acceptable. But when it came time to turn
 and track away, I decided that I had this shit down and didn't need to take my time and be precise.
@@ -88,12 +88,14 @@ through it, I agreed that I failed obviously, and I was a little bit shaken up. 
 skydiving lesson in getting back on the horse, because he put us on a 20 minute call so we could go
 back up and do it again. I learned my lesson, went up, and passed.
 
-It took me a week or less to get through the 25 jumps to get my A license. I learned a lot about my
+It took me about a week to get through the 25 jumps to get my A license. It would have been less
+but there were a few wind days and they force you to only do so many jumps a day while still a student
+in Eloy. I now see that as a great thing, but at the time I thought I could handle more jumps a day.
+I learned a lot about my
 body and flying a canopy. I was so happy that I had paid upfront for the whole thing, because
 although I don't think I would have quit, I might have tried to take some time off to think things.
-Comparing my initial progression with some of the other people I started with taught me that
-currency is king in skydiving. The more often you jump, the quicker you learn. Looking back, I have
-come to believe that overall time in the sport also matters so that it isn't just the jumps that
+Comparing my initial progression with some of the other people I started with taught me two things. First, currency is king in skydiving. The more often you jump, the quicker you learn. However, the flip side is that
+overall time in the sport also matters as it isn't just the jumps that
 matter. You learn and progress also during the time spent between jumping days. You learn things by
 talking to people around the dropzone. It takes the mind and body some time to assimilate new
 information.
@@ -111,8 +113,8 @@ tracking and angle flying, about high performance canopy piloting. I learned abo
 tunnel. It turns out skysurfing isn't really a thing anymore.
 
 I started staying on the dropzone in Eloy first in the bunk house and then in a tent. I got my first
-rig around 60 jumps. It was a 1998 Vector 3 with a Spectre 210. I bought a brand new Cypres AAD and
-had that installed and then set about jumping the shit out of it. I bounced around different
+rig around 60 jumps. It was a 1998 Vector 3 with a Spectre 210. I bought a brand new Cypres AAD,
+had that installed, and then set about jumping the shit out of it. I bounced around different
 diciplines. I wanted to try everything with the goal of wingsuiting still on the horizon. You are
 required to make 200 jumps before you can put on a wingsuit so I knew that I could have fun doing
 other things until I got there. My initial goal after I saw how quickly I got my A license was to
