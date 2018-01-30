@@ -143,7 +143,7 @@ module PostGen
         by_year_pages[date[0..3]] += count[:pages]
       end
       by_year_count.keys.sort.each do |year|
-        puts "#{year}: #{by_year_count[year]}\t Pages: #{by_year_pages[year]}"
+        puts "#{year}: #{'%02d' % by_year_count[year]}\t Pages: #{by_year_pages[year]}\t Avg: #{(by_year_pages[year]/12.0).round(2)}"
       end
     end
 
