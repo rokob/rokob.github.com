@@ -54,7 +54,8 @@ module PostGen
         date: get_datestring,
         categories: @categories.join(' '),
         tags: @tags.join(' '),
-        published: false
+        published: false,
+        pagecount: 0
       }
       frontmatter = Hash[frontmatter.map{|k,v| [k.to_s, v]}]
       frontmatter.to_yaml
@@ -70,7 +71,10 @@ module PostGen
 
     def self.gather_book_info(dir='./_posts', year=nil)
       counts, rank_counts, tags = normalize_data(dir, year)
-      puts "Total count: #{counts.values.reduce(&:+)}"
+      total_count = counts.values.reduce(0){|a,x| a + x[:count]}
+      total_pages = counts.values.reduce(0){|a,x| a + x[:pages]}
+      puts "Total count: #{total_count}"
+      puts "Total pages: #{total_pages}"
       puts
       unless year
         puts "By year:"
@@ -98,7 +102,7 @@ module PostGen
       RANKINGS.each do |rank|
         rank_counts[rank] = 0
       end
-      counts = Hash.new(0)
+      counts = {}
       walk_posts(dir, year) do |data|
         if data[:categories].include? 'book'
           data[:tags].each do |tag|
@@ -109,7 +113,12 @@ module PostGen
               tags[tag] += 1
             end
           end
-          counts[data[:date].strftime('%Y-%m')] += 1
+          d = data[:date].strftime('%Y-%m')
+          if counts[d].nil?
+            counts[d] = {count: 0, pages: 0}
+          end
+          counts[d][:count] += 1
+          counts[d][:pages] += data[:pagecount]
         end
       end
       [counts, rank_counts, tags]
@@ -122,17 +131,19 @@ module PostGen
 
     def self.output_by_month(counts)
       counts.keys.sort.each do |date|
-        puts "#{date}: #{counts[date]}"
+        puts "#{date}: #{counts[date][:count]}\t Pages: #{counts[date][:pages]}"
       end
     end
 
     def self.output_by_year(counts)
-      by_year = Hash.new(0)
+      by_year_count = Hash.new(0)
+      by_year_pages = Hash.new(0)
       counts.each do |date, count|
-        by_year[date[0..3]] += count
+        by_year_count[date[0..3]] += count[:count]
+        by_year_pages[date[0..3]] += count[:pages]
       end
-      by_year.keys.sort.each do |year|
-        puts "#{year}: #{by_year[year]}"
+      by_year_count.keys.sort.each do |year|
+        puts "#{year}: #{by_year_count[year]}\t Pages: #{by_year_pages[year]}"
       end
     end
 
@@ -140,13 +151,13 @@ module PostGen
       Dir.foreach(dir) do |name|
         next if name.start_with? '.'
         File.open("#{dir}/#{name}", 'r') do |f|
-          data = {date: nil, categories: [], tags: []}
+          data = {date: nil, categories: [], tags: [], pagecount: 0}
           first_line = f.readline.chomp.strip
           if first_line == SEPARATOR
             end_of_front_matter = false
             until end_of_front_matter
               line = f.readline.chomp.strip
-              end_of_front_matter= line == SEPARATOR
+              end_of_front_matter = line == SEPARATOR
               if !end_of_front_matter
                 if line.start_with? "date: "
                   date = line.split("date: ")[1]
@@ -158,6 +169,10 @@ module PostGen
                   if line.start_with? "#{type}: "
                     data[type.to_sym] = line.split("#{type}: ")[1].split
                   end
+                end
+                if line.start_with? "pagecount: "
+                  count = line.split("pagecount: ")[1].to_i
+                  data[:pagecount] = count
                 end
               end
             end
