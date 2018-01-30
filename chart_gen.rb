@@ -1,19 +1,32 @@
 #! /usr/bin/env ruby
 
-def fake_html(data)
+def fake_html(data, key)
   result = "<html><head><style>\n"
-  result += css(data)
+  result += css(data, key)
   result += "\n</style></head>\n"
   result += "<body>\n"
-  result += output(data)
+  result += output(data, key)
   result += "\n</body></html>"
   result
 end
 
-def output(data)
-  result = '<div class="chart">'
+def val_for(datum, key)
+  case key
+  when :pages
+    datum[key] - (datum[key] % 10)
+  when :ratio
+    return 0 unless datum[:count] > 0
+    val = datum[:pages] / datum[:count]
+    val - (val % 10)
+  when :count
+    datum[:count]
+  end
+end
+
+def output(data, key)
+  result = "<div class=\"chart-#{key}\">"
   data.each do |datum|
-    result += "<div class=\"bar bar-#{datum[:count]}\">"
+    result += "<div class=\"bar bar-#{val_for(datum, key)}\">"
     result += "<span class=\"text\">#{month_abbreviation(datum[:month])}</span>"
     result += "</div>"
   end
@@ -21,28 +34,30 @@ def output(data)
   result
 end
 
-def css(data)
-  max = get_max(data)
+def css(data, key)
+  max = get_max(data, key)
   width = 280
   height = 100
   each_width = (width/data.count).round(4) - 1
   color = "#2c3e50"
-  css  = ".chart { width: #{width}px;height:#{height}px;background-color:#fff;"
+  css  = ".chart-#{key} { width: #{width}px;height:#{height}px;background-color:#fff;"
   css += "margin: 0px; padding: 0px;}"
-  css += " .chart .bar { width: #{each_width}px; border-right: 1px solid #fff;"
+  css += " .chart-#{key} .bar { width: #{each_width}px; border-right: 1px solid #fff;"
   css += "background-color:#{color};display:inline-block;}"
-  css += " .chart .bar .text { display: none; }"
-  0.upto(max+1) do |n|
-    x = (( (n.to_f/(max+1.0)))*100).round
-    css += " .chart .bar-#{n} { height: #{x}%; }"
+  css += " .chart-#{key} .bar .text { display: none; }"
+  step = key != :count ? 10 : 1
+  (0..max).step(step).each do |n|
+    x = ((n.to_f/max)*100).round
+    css += " .chart-#{key} .bar-#{n} { height: #{x}%; }"
   end
   css
 end
 
-def get_max(data)
+def get_max(data, key)
   max = nil
   data.each do |datum|
-    max = datum[:count] unless max && datum[:count] < max
+    v = val_for(datum, key)
+    max = v unless max && v < max
   end
   max
 end
@@ -93,12 +108,13 @@ def clean_line(line)
 end
 
 def get_from_stdin
+  key = (ARGV[0] || :count).to_sym
   data = []
-  while line = gets
+  while line = STDIN.gets
     data << line.chomp
   end
   data = clean_data(data)
-  puts fake_html(data)
+  puts fake_html(data, key)
 end
 
 get_from_stdin
