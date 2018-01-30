@@ -10,10 +10,11 @@ module PostGen
 
     def self.run(args)
       if args.length > 0
+        dir = './_posts'
         if args[0] == 'book_info'
-          gather_book_info('./_posts', args[1])
+          gather_book_info(dir, args[1])
         elsif args[0] == 'calendar'
-          output_calendar
+          output_calendar(dir, args[1])
         end
       else
         gen = PostGen.new
@@ -124,8 +125,8 @@ module PostGen
       [counts, rank_counts, tags]
     end
 
-    def self.output_calendar
-      counts, _, _ = normalize_data
+    def self.output_calendar(dir='./_posts', year=nil)
+      counts, _, _ = normalize_data(dir, year)
       output_by_month(counts)
     end
 

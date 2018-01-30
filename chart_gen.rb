@@ -77,7 +77,7 @@ def clean_data(input)
       ds = "#{year}-#{month}"
       value = data[ds]
       unless value
-        value = {ds: ds, year: year, month: month, count: 0}
+        value = {ds: ds, year: year, month: month, count: 0, pages: 0}
       end
       result << value
     end
@@ -86,9 +86,10 @@ def clean_data(input)
 end
 
 def clean_line(line)
-  date, count = line.split(': ')
+  date, count, pages = line.split(': ')
   year, month = date.split('-')
-  {ds: date, year: year, month: month, count: count.to_i}
+  count = count.split.first
+  {ds: date, year: year, month: month, count: count.to_i, pages: pages.to_i}
 end
 
 def get_from_stdin
