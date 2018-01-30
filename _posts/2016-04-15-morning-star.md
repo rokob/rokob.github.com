@@ -4,6 +4,7 @@ title: Morning Star
 date: '2016-04-15 19:04:14'
 categories: book
 tags: book fiction good scifi
+pagecount: 545
 ---
 
 The third and final book in the Red Rising trilogy, [*Morning Star*][morning-amazon]

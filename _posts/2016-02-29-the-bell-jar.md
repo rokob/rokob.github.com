@@ -4,6 +4,7 @@ title: The Bell Jar
 date: '2016-02-29 13:02:58'
 categories: book
 tags: book fiction good life
+pagecount: 288
 ---
 
 Thank goodness for leap day as I managed to technically get in another book

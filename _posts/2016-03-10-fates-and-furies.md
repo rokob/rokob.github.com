@@ -4,6 +4,7 @@ title: Fates and Furies
 date: '2016-03-10 10:03:27'
 categories: book
 tags: book fiction good relationships
+pagecount: 391
 ---
 
 [*Fates and Furies*][fates-amazon] is yet another work of

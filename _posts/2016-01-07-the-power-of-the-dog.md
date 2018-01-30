@@ -4,6 +4,7 @@ title: The Power of the Dog
 date: '2016-01-07 17:01:39'
 categories: book
 tags: book crime fiction great
+pagecount: 560
 ---
 
 I have seen [*The Power of the Dog*][dog-amazon] on Amazon for quite

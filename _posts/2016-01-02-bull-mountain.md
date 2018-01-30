@@ -4,6 +4,7 @@ title: Bull Mountain
 date: '2016-01-02 16:01:11'
 categories: book
 tags: book crime fiction great
+pagecount: 306
 ---
 
 Another Amazon recommendation that hit the spot, [*Bull Mountain*][bull-amazon]

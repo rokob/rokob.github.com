@@ -4,6 +4,7 @@ title: Fight Club
 date: '2016-01-11 15:01:56'
 categories: book
 tags: book fiction great society
+pagecount: 221
 ---
 
 The movie Fight Club was good, but I always heard that

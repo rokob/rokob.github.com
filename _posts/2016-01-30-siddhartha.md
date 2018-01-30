@@ -4,6 +4,7 @@ title: Siddhartha
 date: '2016-01-30 10:01:52'
 categories: book
 tags: book fiction good life
+pagecount: 78
 ---
 
 I am not sure where I had first heard of [*Siddhartha*][sid-amazon],
@@ -61,5 +62,5 @@ it is short and to the point, so unlike some other philisophical stories, this
 did not put me to sleep as often.
 
 
-[sid-amazon]:     http://amzn.com/B00OARFNBU
+[sid-amazon]:     http://a.co/02VQ4YJ
 

@@ -4,6 +4,7 @@ title: The Moonlit Garden
 date: '2016-01-13 15:01:26'
 categories: book
 tags: book fiction history okay
+pagecount: 430
 ---
 
 Amazon started a program called [Kindle First][kindle-first]

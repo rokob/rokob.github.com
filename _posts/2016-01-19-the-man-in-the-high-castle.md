@@ -4,6 +4,7 @@ title: The Man in the High Castle
 date: '2016-01-19 17:01:04'
 categories: book
 tags: book fiction good scifi
+pagecount: 290
 ---
 
 Amazon created a TV series semi-based on this book and it was
