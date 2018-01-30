@@ -4,6 +4,7 @@ title: The Drawing of the Three
 date: '2017-05-16T23:17:35-07:00'
 categories: book
 tags: book fiction good scifi
+pagecount: 529
 ---
 
 I guess I am reading the Dark Tower series now, so this was the second installment,

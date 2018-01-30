@@ -4,6 +4,7 @@ title: On Writing
 date: '2016-09-04T16:01:04+02:00'
 categories: book
 tags: book great nonfiction
+pagecount: 320
 ---
 
 [*On Writing*][writing-amaz] came to my attention through an interaction with a friend. I have

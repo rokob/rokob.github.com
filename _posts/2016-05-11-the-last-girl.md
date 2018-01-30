@@ -4,6 +4,7 @@ title: The Last Girl
 date: '2016-05-11 17:05:17'
 categories: book
 tags: book fiction okay scifi
+pagecount: 386
 ---
 
 I picked [*The Last Girl*][last-amazon] as my choice for the free book of

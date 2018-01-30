@@ -4,6 +4,7 @@ title: Water for Elephants
 date: '2016-07-10 14:07:29'
 categories: book
 tags: book fiction good
+pagecount: 364
 ---
 
 I kept hearing about or seeing [*Water for Elephants*][water-amazon] so that I came to the

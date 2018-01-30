@@ -4,6 +4,7 @@ title: The Handmaid's Tale
 date: '2017-05-30T22:02:31-07:00'
 categories: book
 tags: book fiction great scifi
+pagecount: 325
 ---
 
 Taya started watching the Hulu show based on this book, and before I wanted to watch it I had to

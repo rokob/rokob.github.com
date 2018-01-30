@@ -4,6 +4,7 @@ title: Snow Crash
 date: '2016-08-07T13:08:04+02:00'
 categories: book
 tags: book fiction great scifi
+pagecount: 480
 ---
 
 I am dragging this year on my reading. Part of that has to do with skydiving taking up a lot

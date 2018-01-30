@@ -4,6 +4,7 @@ title: The Sympathizer
 date: '2017-07-30T22:11:11-07:00'
 categories: book
 tags: book fiction great
+pagecount: 384
 ---
 
 Again on my search for things to read I went back to books that have won prizes and came up with

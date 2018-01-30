@@ -4,6 +4,7 @@ title: Country of My Skull
 date: '2016-12-13T20:24:08-08:00'
 categories: book
 tags: book crime death great history nonfiction
+pagecount: 423
 ---
 
 [*Country of My Skull*][skull-amazon] is a very good book both in content and style. I had never

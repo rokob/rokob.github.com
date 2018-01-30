@@ -4,6 +4,7 @@ title: The First Commandment
 date: '2017-12-31T17:50:29-08:00'
 categories: book
 tags: book fiction good thriller
+pagecount: 421
 ---
 
 Yet another Scot Harvath book from Brad Thor, [*The First Commandment*][fc-amazon] was just as good

@@ -4,6 +4,7 @@ title: The Tibetan Book of Living and Dying
 date: '2016-09-19T21:55:50+02:00'
 categories: book
 tags: book good life nonfiction death
+pagecount: 425
 ---
 
 I have delayed writing this post for over a month now. I read

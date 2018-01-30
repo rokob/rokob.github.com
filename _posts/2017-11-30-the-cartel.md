@@ -4,6 +4,7 @@ title: The Cartel
 date: '2017-11-30T14:44:10-08:00'
 categories: book
 tags: book crime fiction great thriller
+pagecount: 770
 ---
 
 [*The Cartel*][cartel-amazon] is the sequel to Don Winslow's *The Power of the Dog* which blew me

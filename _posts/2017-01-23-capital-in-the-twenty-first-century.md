@@ -4,6 +4,7 @@ title: Capital in the Twenty-First Century
 date: '2017-01-23T22:24:52-08:00'
 categories: book
 tags: book great history nonfiction
+pagecount: 696
 ---
 
 Every once in a while a book comes along that many people talk about wanting to read or bragging

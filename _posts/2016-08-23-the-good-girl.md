@@ -4,6 +4,7 @@ title: The Good Girl
 date: '2016-08-23T16:29:55-07:00'
 categories: book
 tags: book crime fiction good
+pagecount: 383
 ---
 
 I think I ended up reading [*The Good Girl*][good-amazon] because it was on the list of free books

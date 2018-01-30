@@ -4,6 +4,7 @@ title: The Sellout
 date: '2017-03-30T20:46:28-07:00'
 categories: book
 tags: book fiction great
+pagecount: 305
 ---
 
 Winner of the Man Booker Prize, [*The Sellout*][sellout-amazon] is an hilarous, irreverent novel set
