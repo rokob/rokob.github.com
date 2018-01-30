@@ -4,6 +4,7 @@ title: Roughneck Nine-One
 date: '2015-05-10 18:05:18'
 categories: book
 tags: good military nonfiction
+pagecount: 352
 ---
 
 It appears that I was able to make good on my hope that I would be

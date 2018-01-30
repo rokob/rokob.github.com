@@ -4,6 +4,7 @@ title: Chosen Soldier
 date: '2015-06-08 15:06:52'
 categories: book
 tags: book good military nonfiction
+pagecount: 416
 ---
 
 [*Chosen Soldier*][chosen-amazon] is an account of how the US Army

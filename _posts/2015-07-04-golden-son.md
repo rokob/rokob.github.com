@@ -4,6 +4,7 @@ title: Golden Son
 date: 2015-07-04 13:07:33
 categories: book
 tags: book fiction good scifi
+pagecount: 466
 ---
 
 I read *Red Rising* a while ago and enjoyed it enough

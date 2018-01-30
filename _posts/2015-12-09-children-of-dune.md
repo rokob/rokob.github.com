@@ -4,6 +4,7 @@ title: Children of Dune
 date: '2015-12-09 08:12:59'
 categories: book
 tags: book fiction great scifi
+pagecount: 416
 ---
 
 Wow, *Dune* was long, a bit complex, and good; *Dune Messiah* was

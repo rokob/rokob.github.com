@@ -4,6 +4,7 @@ title: Waiting For Godot
 date: '2015-01-01 22:01:32'
 categories: book
 tags: book play bad fiction
+pagecount: 128
 ---
 
 Through a series of comedic errors I was recommended the play [*Waiting for Godot*][godot-amazon]

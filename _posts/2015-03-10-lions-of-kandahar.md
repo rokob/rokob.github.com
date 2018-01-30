@@ -4,6 +4,7 @@ title: Lions of Kandahar
 date: '2015-03-10 12:03:10'
 categories: book
 tags: book good military nonfiction
+pagecount: 304
 ---
 
 The Green Berets form an interesting part of our military. They are

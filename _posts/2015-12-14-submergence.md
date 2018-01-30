@@ -4,6 +4,7 @@ title: Submergence
 date: '2015-12-14 16:12:38'
 categories: book
 tags: book fiction good society
+pagecount: 226
 ---
 
 I have been trying to figure out how [*Submergence*][sub-amazon]

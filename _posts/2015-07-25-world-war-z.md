@@ -4,6 +4,7 @@ title: World War Z
 date: 2015-07-25 15:07:19
 categories: book
 tags: book fiction great scifi society
+pagecount: 352
 ---
 
 Movies and books are often times two sides of the

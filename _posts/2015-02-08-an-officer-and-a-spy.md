@@ -4,6 +4,7 @@ title: An Officer and a Spy
 date: '2015-02-08 22:02:26'
 categories: book
 tags: book military fiction okay
+pagecount: 449
 ---
 
 Historical fiction is a strange genre. The first example of this that

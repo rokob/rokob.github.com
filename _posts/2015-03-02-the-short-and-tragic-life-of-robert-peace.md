@@ -4,6 +4,7 @@ title: The Short and Tragic Life of Robert Peace
 date: '2015-03-02 22:03:20'
 categories: book
 tags: book good nonfiction society
+pagecount: 433
 ---
 
 [*The Short and Tragic Life of Robert Peace*][peace-amazon] is another

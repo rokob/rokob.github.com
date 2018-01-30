@@ -4,6 +4,7 @@ title: The City of Ember
 date: 2015-07-02 16:07:11
 categories: book
 tags: book fiction okay
+pagecount: 270
 ---
 
 After reading a few young adult trilogies, Amazon

@@ -4,6 +4,7 @@ title: Sharp Objects
 date: '2015-01-12 23:01:37'
 categories: book
 tags: book fiction great crime
+pagecount: 254
 ---
 
 A couple years ago I picked up [*Gone Girl*][gone-amazon]

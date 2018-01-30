@@ -4,6 +4,7 @@ title: Fifty Shades of Grey
 date: '2015-01-11 09:01:56'
 categories: book
 tags: book fiction sex okay
+pagecount: 514
 ---
 
 This may seem like a bit of an odd choice for me to read, but

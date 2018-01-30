@@ -4,6 +4,7 @@ title: Inside Delta Force
 date: '2015-05-23 16:05:15'
 categories: book
 tags: book good history military nonfiction
+pagecount: 336
 ---
 
 I have been reading a few military books recently, so naturally I

@@ -4,6 +4,7 @@ title: I Am Pilgrim
 date: '2015-01-19 22:01:24'
 categories: book
 tags: book fiction crime great thriller
+pagecount: 801
 ---
 
 Focus is one of the attributes that I like most about myself.
@@ -46,4 +47,4 @@ the Jason Bourne series, but much more modern and personally
 a little more relatable.
 
 
-[pilgrim-amazon]:   smile.amazon.com/dp/B00DPM90C4
+[pilgrim-amazon]:   https://smile.amazon.com/dp/B00DPM90C4

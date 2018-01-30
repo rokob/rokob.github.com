@@ -4,6 +4,7 @@ title: Dune Messiah
 date: '2015-10-28 17:10:47'
 categories: book
 tags: book fiction great scifi
+pagecount: 340
 ---
 
 I started reading another book right after *Dune* but

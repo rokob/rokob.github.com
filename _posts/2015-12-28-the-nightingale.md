@@ -4,6 +4,7 @@ title: The Nightingale
 date: '2015-12-28 23:12:40'
 categories: book
 tags: book fiction great history
+pagecount: 593
 ---
 
 Even though this book kept popping up on Amazon recommendations

@@ -4,6 +4,7 @@ title: State of the Union
 date: 2015-07-09 13:07:19
 categories: book
 tags: book fiction good thriller
+pagecount: 592
 ---
 
 I decided to put [*State of the Union*][state-amazon]

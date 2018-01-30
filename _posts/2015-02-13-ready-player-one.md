@@ -4,6 +4,7 @@ title: Ready Player One
 date: '2015-02-13 23:02:39'
 categories: book
 tags: book fiction good scifi
+pagecount: 386
 ---
 
 Rearranging my reading list to mix up the content and genre was definitely

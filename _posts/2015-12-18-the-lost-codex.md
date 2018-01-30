@@ -4,6 +4,7 @@ title: The Lost Codex
 date: '2015-12-18 21:12:34'
 categories: book
 tags: book fiction history okay thriller
+pagecount: 428
 ---
 
 After reading a few of the Scot Harvath books by Brad Thor,

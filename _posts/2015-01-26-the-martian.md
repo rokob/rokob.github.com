@@ -4,6 +4,7 @@ title: The Martian
 date: '2015-01-26 20:01:38'
 categories: book
 tags: book fiction scifi good
+pagecount: 385
 ---
 
 Somehow [*The Martian*][martian-amazon] ended up on my reading

@@ -4,6 +4,7 @@ title: Cryptonomicon
 date: '2015-05-04 13:05:07'
 categories: book
 tags: book good fiction history military
+pagecount: 1168
 ---
 
 [*Cryptonomicon*][crypt-amazon] was a long and at times convulted read, but

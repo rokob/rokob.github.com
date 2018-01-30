@@ -4,6 +4,7 @@ title: The Strange Library
 date: '2015-03-05 21:03:09'
 categories: book
 tags: bad book fiction
+pagecount: 96
 ---
 
 Another weird book that made it onto my list, but this one
