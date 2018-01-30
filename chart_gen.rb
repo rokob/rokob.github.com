@@ -1,11 +1,13 @@
 #! /usr/bin/env ruby
 
-def fake_html(data, key)
+require 'securerandom'
+
+def fake_html(data, key, token)
   result = "<html><head><style>\n"
-  result += css(data, key)
+  result += css(data, key, token)
   result += "\n</style></head>\n"
   result += "<body>\n"
-  result += output(data, key)
+  result += output(data, key, token)
   result += "\n</body></html>"
   result
 end
@@ -23,8 +25,8 @@ def val_for(datum, key)
   end
 end
 
-def output(data, key)
-  result = "<div class=\"chart-#{key}\">"
+def output(data, key, token)
+  result = "<div class=\"chart-#{token}-#{key}\">"
   data.each do |datum|
     result += "<div class=\"bar bar-#{val_for(datum, key)}\">"
     result += "<span class=\"text\">#{month_abbreviation(datum[:month])}</span>"
@@ -34,21 +36,21 @@ def output(data, key)
   result
 end
 
-def css(data, key)
+def css(data, key, token)
   max = get_max(data, key)
-  width = 280
-  height = 100
-  each_width = (width/data.count).round(4) - 1
+  width = 100
+  height = 200
+  each_width = (width.to_f/data.count).round(4) - 0.2
   color = "#2c3e50"
-  css  = ".chart-#{key} { width: #{width}px;height:#{height}px;background-color:#fff;"
-  css += "margin: 0px; padding: 0px;}"
-  css += " .chart-#{key} .bar { width: #{each_width}px; border-right: 1px solid #fff;"
+  css  = ".chart-#{token}-#{key} { width: #{width}%;height:#{height}px;background-color:#fff;"
+  css += "margin: 0px; padding: 0px; text-align: center;}"
+  css += " .chart-#{token}-#{key} .bar { width: #{each_width}%; border-right: 1px solid #fff;"
   css += "background-color:#{color};display:inline-block;}"
-  css += " .chart-#{key} .bar .text { display: none; }"
+  css += " .chart-#{token}-#{key} .bar .text { display: none; }"
   step = key != :count ? 10 : 1
   (0..max).step(step).each do |n|
     x = ((n.to_f/max)*100).round
-    css += " .chart-#{key} .bar-#{n} { height: #{x}%; }"
+    css += " .chart-#{token}-#{key} .bar-#{n} { height: #{x}%; }"
   end
   css
 end
@@ -109,12 +111,13 @@ end
 
 def get_from_stdin
   key = (ARGV[0] || :count).to_sym
+  token = SecureRandom.hex(4)
   data = []
   while line = STDIN.gets
     data << line.chomp
   end
   data = clean_data(data)
-  puts fake_html(data, key)
+  puts fake_html(data, key, token)
 end
 
 get_from_stdin
