@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="/css/styles.css">
     <link rel="stylesheet" href="/css/pygment_trac.css">
     <link rel="stylesheet" href="/css/font-awesome/css/font-awesome.min.css">
-    {% for css_name in page.extra_css %}
+    {%- for css_name in page.extra_css -%}
       <link rel="stylesheet" href="/css/{{ css_name }}">
-    {% endfor %}
+    {%- endfor -%}
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -21,13 +21,12 @@
       <header>
         <h1><a href="{{ site.url }}/" class="title">rokob</a></h1>
         <p>all the things</p>
-
-        {% for page in site.pages %}
-          {% if page.url contains 'blog/page' or page.url contains 'tag' %}
-          {% else %}
+        {%- for page in site.pages -%}
+          {%- if page.url contains 'blog/page' or page.url contains 'tag' -%}
+          {%- else -%}
             <p class="view"><i class="fa {{ page.icon }} fa-fw"> </i><a href="{{ site.url }}{{ page.url }}">  {{ page.title }}</a></p>
-          {% endif %}
-        {% endfor %}
+          {%- endif -%}
+        {%- endfor -%}
         <p class="view">
           <a href="https://www.facebook.com/aledvina"><i class="fa fa-facebook fa-fw fa-lg"></i></a>
           <a href="https://twitter.com/wolfgangfabian"><i class="fa fa-twitter fa-fw fa-lg"></i></a>
