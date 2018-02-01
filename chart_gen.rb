@@ -36,12 +36,12 @@ end
 def output(data, key, token)
   max, _ = get_max(data, key)
   result = "<div class=\"chart-#{token}-#{key}\">"
-  result += "<div class=\"first-date-#{token}-#{key}\">#{first_date(data)}</div>"
   data.each do |datum|
     result += "<div class=\"bar bar-#{val_for(datum, key)}\">"
     result += "<span class=\"text\">#{month_abbreviation(datum[:month])}</span>"
     result += "</div>"
   end
+  result += "<div class=\"first-date-#{token}-#{key}\">#{first_date(data)}</div>"
   result += "<div class=\"max-value-#{token}-#{key}\">#{max}</div>"
   result += "<div class=\"last-date-#{token}-#{key}\">#{last_date(data)}</div>"
   result += '</div>'
@@ -60,7 +60,7 @@ def css(data, key, token)
   max, max_idx = get_max(data, key)
   width = 100
   height = 200
-  each_width = (width.to_f/data.count).round(4) - 0.2
+  each_width = (width.to_f/data.count).round(2) - 0.35
   color = "#2c3e50"
   css  = ".chart-#{token}-#{key} { width: #{width}%;height:#{height}px;background-color:#fff;"
   css += "margin: 0px; padding: 20px 0px 20px 0px; text-align: center; position: relative;}"
@@ -74,7 +74,7 @@ def css(data, key, token)
   end
   css += ".last-date-#{token}-#{key} { position: absolute; right: 0; bottom: 0 }"
   css += ".first-date-#{token}-#{key} { position: absolute; left: 0; bottom: 0 }"
-  css += ".max-value-#{token}-#{key} { position: absolute; left: #{each_width*(1+max_idx)}%; top: 0 }"
+  css += ".max-value-#{token}-#{key} { position: absolute; left: #{each_width*(2+max_idx)}%; top: 0 }"
   css
 end
 

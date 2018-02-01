@@ -4,7 +4,7 @@ safe: false
 lsi: false
 highlighter: pygments
 timezone: America/Los_Angeles
-gems: [jekyll-paginate]
+plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "blog/page:num"
 exclude: [deploy.sh, Gemfile, Gemfile.lock, .travis.yml, postgen.rb, chart_gen.rb, run_chart_gen.sh, README.md]
