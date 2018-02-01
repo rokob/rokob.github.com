@@ -2,14 +2,22 @@
 
 require 'securerandom'
 
-def fake_html(data, key, token)
-  result = "<html><head><style>\n"
-  result += css(data, key, token)
-  result += "\n</style></head>\n"
-  result += "<body>\n"
-  result += output(data, key, token)
-  result += "\n</body></html>"
-  result
+def fake_html(data, key, token, cssfile, htmlfile)
+  if cssfile
+    IO.write(cssfile, css(data, key, token))
+  end
+  if htmlfile
+    IO.write(htmlfile, output(data, key, token))
+  end
+  if !cssfile && !htmlfile
+    result = "<html><head><style>\n"
+    result += css(data, key, token)
+    result += "\n</style></head>\n"
+    result += "<body>\n"
+    result += output(data, key, token)
+    result += "\n</body></html>"
+    result
+  end
 end
 
 def val_for(datum, key)
@@ -26,24 +34,36 @@ def val_for(datum, key)
 end
 
 def output(data, key, token)
+  max, _ = get_max(data, key)
   result = "<div class=\"chart-#{token}-#{key}\">"
+  result += "<div class=\"first-date-#{token}-#{key}\">#{first_date(data)}</div>"
   data.each do |datum|
     result += "<div class=\"bar bar-#{val_for(datum, key)}\">"
     result += "<span class=\"text\">#{month_abbreviation(datum[:month])}</span>"
     result += "</div>"
   end
+  result += "<div class=\"max-value-#{token}-#{key}\">#{max}</div>"
+  result += "<div class=\"last-date-#{token}-#{key}\">#{last_date(data)}</div>"
   result += '</div>'
   result
 end
 
+def first_date(data)
+  data.first[:ds]
+end
+
+def last_date(data)
+  data.last[:ds]
+end
+
 def css(data, key, token)
-  max = get_max(data, key)
+  max, max_idx = get_max(data, key)
   width = 100
   height = 200
   each_width = (width.to_f/data.count).round(4) - 0.2
   color = "#2c3e50"
   css  = ".chart-#{token}-#{key} { width: #{width}%;height:#{height}px;background-color:#fff;"
-  css += "margin: 0px; padding: 0px; text-align: center;}"
+  css += "margin: 0px; padding: 20px 0px 20px 0px; text-align: center; position: relative;}"
   css += " .chart-#{token}-#{key} .bar { width: #{each_width}%; border-right: 1px solid #fff;"
   css += "background-color:#{color};display:inline-block;}"
   css += " .chart-#{token}-#{key} .bar .text { display: none; }"
@@ -52,16 +72,23 @@ def css(data, key, token)
     x = ((n.to_f/max)*100).round
     css += " .chart-#{token}-#{key} .bar-#{n} { height: #{x}%; }"
   end
+  css += ".last-date-#{token}-#{key} { position: absolute; right: 0; bottom: 0 }"
+  css += ".first-date-#{token}-#{key} { position: absolute; left: 0; bottom: 0 }"
+  css += ".max-value-#{token}-#{key} { position: absolute; left: #{each_width*(1+max_idx)}%; top: 0 }"
   css
 end
 
 def get_max(data, key)
   max = nil
-  data.each do |datum|
+  idx = 0
+  data.each_with_index do |datum, i|
     v = val_for(datum, key)
-    max = v unless max && v < max
+    unless max && v < max
+      max = v
+      idx = i
+    end
   end
-  max
+  [max, idx]
 end
 
 def month_abbreviation(month)
@@ -117,7 +144,8 @@ def get_from_stdin
     data << line.chomp
   end
   data = clean_data(data)
-  puts fake_html(data, key, token)
+  value = fake_html(data, key, token, ARGV[1], ARGV[2])
+  puts value if value
 end
 
 get_from_stdin
