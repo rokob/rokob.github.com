@@ -15,6 +15,8 @@ module PostGen
           gather_book_info(dir, args[1])
         elsif args[0] == 'calendar'
           output_calendar(dir, args[1])
+        elsif args[0] == 'yearly'
+          output_yearly_summary(dir)
         end
       else
         gen = PostGen.new
@@ -145,6 +147,57 @@ module PostGen
       end
       by_year_count.keys.sort.each do |year|
         puts "#{year}: #{'%02d' % by_year_count[year]}\t Pages: #{by_year_pages[year]}\t Avg: #{(by_year_pages[year]/12.0).round(2)}"
+      end
+    end
+
+    def self.yearly_data(dir='./_posts')
+      years = {}
+      tags = {}
+      rank_counts = {}
+      counts = {}
+      walk_posts(dir) do |data|
+        year = data[:date].strftime('%Y')
+        if data[:categories].include? 'book'
+          years[year] = 1
+          data[:tags].each do |tag|
+            next if tag == 'book'
+            if RANKINGS.include? tag
+              if rank_counts[year].nil?
+                rank_counts[year] = {}
+                RANKINGS.each do |rank|
+                  rank_counts[year][rank] = 0
+                end
+              end
+              rank_counts[year][tag] += 1
+            else
+              if tags[year].nil?
+                tags[year] = Hash.new(0)
+              end
+              tags[year][tag] += 1
+            end
+          end
+          if counts[year].nil?
+            counts[year] = {count: 0, pages: 0}
+          end
+          counts[year][:count] += 1
+          counts[year][:pages] += data[:pagecount]
+        end
+      end
+      [counts, rank_counts, tags, years.keys.sort]
+    end
+
+    def self.output_yearly_summary(dir='./_posts')
+      counts, rank_counts, tags, years = yearly_data(dir)
+      years.each do |year|
+        puts "Year: #{year}"
+        puts "Books read: #{counts[year][:count]}"
+        puts "Pages read: #{counts[year][:pages]}"
+        RANKINGS.each do |rank|
+          puts "#{rank}: #{rank_counts[year][rank]}"
+        end
+        ['fiction', 'nonfiction'].each do |tag|
+          puts "#{tag}: #{tags[year][tag]}"
+        end
       end
     end
 

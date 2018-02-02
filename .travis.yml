@@ -19,5 +19,5 @@ cache: bundler
 script: bundle exec jekyll build
 after_success:
   - ./deploy.sh setup
-  - ./run_chart_gen.sh
+  - ./generate_reading_data.sh
   - ./deploy.sh deploy

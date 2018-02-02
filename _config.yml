@@ -7,7 +7,7 @@ timezone: America/Los_Angeles
 plugins: [jekyll-paginate]
 paginate: 10
 paginate_path: "blog/page:num"
-exclude: [deploy.sh, Gemfile, Gemfile.lock, .travis.yml, postgen.rb, chart_gen.rb, run_chart_gen.sh, README.md]
+exclude: [deploy.sh, Gemfile, Gemfile.lock, .travis.yml, postgen.rb, chart_gen.rb, table_gen.rb, generate_reading_data.sh, README.md]
 collections:
   writings:
     output: true
