@@ -72,9 +72,9 @@ def css(data, key, token)
     x = ((n.to_f/max)*100).round
     css += " .chart-#{token}-#{key} .bar-#{n} { height: #{x}%; }"
   end
-  css += ".last-date-#{token}-#{key} { position: absolute; right: 0; bottom: 0 }"
-  css += ".first-date-#{token}-#{key} { position: absolute; left: 0; bottom: 0 }"
-  css += ".max-value-#{token}-#{key} { position: absolute; left: #{each_width*(2+max_idx)}%; top: 0 }"
+  css += " .last-date-#{token}-#{key} { position: absolute; right: 0; bottom: 0 }"
+  css += " .first-date-#{token}-#{key} { position: absolute; left: 0; bottom: 0 }"
+  css += " .max-value-#{token}-#{key} { position: absolute; left: #{each_width*(2+max_idx)}%; top: 0 }"
   css
 end
 
@@ -138,7 +138,7 @@ end
 
 def get_from_stdin
   key = (ARGV[0] || :count).to_sym
-  token = SecureRandom.hex(4)
+  token = 0 # I don't need this anymore SecureRandom.hex(4)
   data = []
   while line = STDIN.gets
     data << line.chomp
