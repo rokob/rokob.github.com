@@ -27,6 +27,8 @@ module PostGen
 
     def initialize
       @date = DateTime.now
+      @pagecount = nil
+      @book_link = nil
     end
 
     def gather_info
@@ -35,6 +37,10 @@ module PostGen
       ask('Category') {|c| @categories = c.split}
       puts self.class.gather_groupings('tags')
       ask('Tags') {|g| @tags = g.split}
+      if @categories.include? 'book'
+        ask('Page count') {|p| @pagecount = p}
+        ask('Link') {|l| @book_link = l}
+      end
     end
 
     def gen_filename(title, ext='md')
@@ -57,9 +63,11 @@ module PostGen
         date: get_datestring,
         categories: @categories.join(' '),
         tags: @tags.join(' '),
-        published: false,
-        pagecount: 0
+        published: false
       }
+      unless @pagecount.nil?
+        frontmatter[:pagecount] = @pagecount.to_i
+      end
       frontmatter = Hash[frontmatter.map{|k,v| [k.to_s, v]}]
       frontmatter.to_yaml
     end
@@ -244,6 +252,11 @@ module PostGen
         f.puts frontmatter
         f.puts SEPARATOR
         f.puts
+        unless @book_link.nil?
+          f.puts "[*#{@title}*][book-amaz]"
+          f.puts
+          f.puts "[book-amaz]:      #{@book_link}"
+        end
       end
     end
 
@@ -260,4 +273,3 @@ module PostGen
 end
 
 PostGen::PostGen.run ARGV
-
