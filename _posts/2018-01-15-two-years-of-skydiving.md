@@ -93,7 +93,8 @@ but there were a few wind days and they force you to only do so many jumps a day
 in Eloy. I now see that as a great thing, but at the time I thought I could handle more jumps a day.
 I learned a lot about my
 body and flying a canopy. I was so happy that I had paid upfront for the whole thing, because
-although I don't think I would have quit, I might have tried to take some time off to think things.
+although I don't think I would have quit, I might have tried to take some time off to think things
+through.
 Comparing my initial progression with some of the other people I started with taught me two things. First, currency is king in skydiving. The more often you jump, the quicker you learn. However, the flip side is that
 overall time in the sport also matters as it isn't just the jumps that
 matter. You learn and progress also during the time spent between jumping days. You learn things by
