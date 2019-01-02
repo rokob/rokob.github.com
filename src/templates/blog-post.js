@@ -42,7 +42,7 @@ export default ({ data }) => {
   const sha = post.fields.sha
   const shortSha = sha ? sha.substr(0, 8) : sha;
   const filename = post.parent.relativePath
-  const history = `https://github.com/rokob/rokob.github.com/commits/content/${filename}`
+  const history = `https://github.com/rokob/rokob.github.com/commits/source/content/${filename}`
   const commit = `https://github.com/rokob/rokob.github.com/commit/${sha}`
 
   return (
