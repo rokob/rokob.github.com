@@ -9,6 +9,10 @@ const Container = styled.div`
   max-width: 800px;
   padding-bottom: ${rhythm(2)};
   padding-top: ${rhythm(1.5)};
+
+  @media only screen and (max-width: 801px) {
+    width: 93%;
+  }
 `
 
 const ChildWrapper = styled.div`
