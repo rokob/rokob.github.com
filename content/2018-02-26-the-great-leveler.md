@@ -15,7 +15,7 @@ causes of reduced inequality of any noticable scale were the result of violence.
 the compression.
 
 I highly recommend reading both this book as well as [*Capital in the 21st
-Century*](/book/2017/01/23/capital-in-the-twenty-first-century.html) with the latter being first. It
+Century*](/blog/2017-01-23-capital-in-the-twenty-first-century/) with the latter being first. It
 is important to understand inequality both in income and wealth, both historically and currently,
 and across different countries before one asks how this has changed. Piketty's book will give you
 that foundation in the numbers based on the best currently available data. Whether you agree with

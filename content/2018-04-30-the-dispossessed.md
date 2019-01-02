@@ -8,7 +8,7 @@ pagecount: 387
 ---
 
 Taya recommend another Ursula K. Le Guin book, [*The Dispossessed*][book-amaz], which is set roughly in
-the same scifi universe as [*The Left Hand of Darkness*](/book/2018/03/01/the-left-hand-of-darkness.html).
+the same scifi universe as [*The Left Hand of Darkness*](/blog/2018-03-01-the-left-hand-of-darkness/).
 The planet is different, the characters and story are different, but there is a feeling of
 similarity to everything that is comforting. Overall the book was fantastic, both in execution and
 idea.

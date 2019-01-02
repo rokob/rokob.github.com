@@ -8,7 +8,7 @@ pagecount: 353
 ---
 
 [*Authority*][book-amaz] is the second book in the Southern Reach trilogy, the first being
-[*Annihilation*](/book/2018/01/18/annihilation.html). I would classify these both as literary
+[*Annihilation*](/blog/2018-01-18-annihilation/). I would classify these both as literary
 science fiction, if that is a thing. Altogether very different from the first, but stylistically the
 same. We get to experince the story from a different character's perspective and this made the pair
 of books much more fulfilling. Sadly this did not make the movie any more comprehensible.

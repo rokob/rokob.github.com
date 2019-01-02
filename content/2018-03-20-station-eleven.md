@@ -24,7 +24,7 @@ leads to a sense of being one of them. You only know as much as they do and ther
 not knowing is felt alongside them.
 
 Parts of this story were particularly interesting to me after reading [*The Great
-Leveler*](/book/2018/02/26/the-great-leveler.html). I had all of these thoughts about how this flu
+Leveler*](/blog/2018-02-26-the-great-leveler/). I had all of these thoughts about how this flu
 was affecting wealth distributions and income inequality. This book took the flu lethality to the
 extreme, worse than anything in history, so that the destruction was almost complete. The largest
 grouping of people that we hear of is a few hundred by twenty years after. That sort of decimation

@@ -10,7 +10,7 @@ pagecount: 336
 I had this book [*Flow (again)*][book-amaz] on my Kindle and couldn't remember whether I had read it
 yet or not, so I decided to read it. Just now as I sat down to write this I realized I coud have
 checked this blog to find out if I had read it before and lo and behold [I read it in
-2015](/book/2015/06/06/flow.html). This is somewhat disheartening as while reading it this time I
+2015](/blog/2015-06-06-flow/). This is somewhat disheartening as while reading it this time I
 had a lot of profound thoughts about it being meaningful and how I want to change some things, but
 clearly I had some of these thoughts before and here I am.
 
