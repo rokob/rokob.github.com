@@ -1,0 +1,1 @@
+exports.PostsOnIndex = 5;

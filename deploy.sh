@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 REMOTE_LOCATION="rokob/rokob.github.com.git"
-SITE="_site"
+SITE="public"
 DEPLOY="_deploy/"
 
 info() {
@@ -67,7 +67,7 @@ deploy() {
 
   info "building site"
   
-  bundle exec jekyll build > /dev/null
+  npm run build > /dev/null
   
   cp -r "$SITE"/* $DEPLOY
   info "copied $SITE into $DEPLOY"

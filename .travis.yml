@@ -1,23 +1,14 @@
 sudo: false
-language: ruby
-rvm:
-  - 2.3.1
+language: node_js
 env:
   global:
     - secure: "S7HUUmGyXbUmbK8HIZn6S8tia3NOh+oGsbBEhlazFzTk2c4hLDwWNQr8ydz4LnikMkCvUeIG9NuXKyeQNmscpf//HPt0ML7OJjPh1jtLP+uB2HiEAAz3u1d66Y563EetFcEpSfMRSamupqBbDG29YgJNuzHHy62ZIDvNCqK6C5A="
 branches:
   only:
     - source
-addons:
-  apt:
-    packages:
-      - ghc
-      - haskell-platform
 install:
-  - bundle install --path _vendor/bundle
-cache: bundler
-script: bundle exec jekyll build
+  - npm install
+script: npm run build
 after_success:
   - ./deploy.sh setup
-  - ./generate_reading_data.rb
   - ./deploy.sh deploy

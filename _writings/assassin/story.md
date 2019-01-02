@@ -1,5 +1,0 @@
----
-title: Assassin
----
-
-Well howdy
