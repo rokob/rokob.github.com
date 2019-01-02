@@ -4,17 +4,15 @@ title: Year In Review
 date: 2016-01-01 12:01:47
 categories: life
 tags: ["life"]
-extra_css:
-  - book_chart_2015.css
 ---
 
 My New Year's resolution for 2015 was to read a book a week. I was successful
-in doing this in total, even though I did not follow a linear path. As you can
-see in this chart:
+in doing this in total, even though I did not follow a linear path. [Later edit] I had a graph here
+which I generated based on the data and I have since replaced this with its own page showing the
+data over time. See [here](/reading/) for all of the various graphs and tables.
 
-<div class="chart"><div class="bar bar-7"><span class="text">Jan</span></div><div class="bar bar-5"><span class="text">Feb</span></div><div class="bar bar-5"><span class="text">Mar</span></div><div class="bar bar-0"><span class="text">Apr</span></div><div class="bar bar-5"><span class="text">May</span></div><div class="bar bar-7"><span class="text">Jun</span></div><div class="bar bar-9"><span class="text">Jul</span></div><div class="bar bar-1"><span class="text">Aug</span></div><div class="bar bar-0"><span class="text">Sep</span></div><div class="bar bar-2"><span class="text">Oct</span></div><div class="bar bar-4"><span class="text">Nov</span></div><div class="bar bar-9"><span class="text">Dec</span></div></div>
-
-Each bar represents the books I read in a given month starting last January
+As you can see if you look at the graphs on that page, each bar represents the books I read
+in a given month starting in January 2015
 where I read 7 books, and ending in December where I read 9.
 I had a couple months where I did not manage to finish a book, even though
 I was usually reading during that time. My peak books finished per month was
