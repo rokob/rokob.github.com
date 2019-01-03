@@ -5,7 +5,7 @@ date: '2019-01-02T20:27:36Z'
 categories: life
 tags:
 - life
-- musing
+- musings
 - reading
 ---
 
