@@ -61,7 +61,10 @@ and others which I didn't think would happen which did. Such is life.
 I am still mostly posting here just for the books I read so I have yet another year of reading data.
 I tried to read more this year as I noticed I had fallen off the past couple years after hitting my
 goal in 2015. See all the data [here](/reading/). I read 32 books, which is my second best year out
-of the past 4. Surprisingly I read 17 fiction and 15 non-fiction which is the first time that my
+of the past 4. The biggest accomplishment this year was to read at least one book each month, rather
+than a lot some months and none in others. I had yet to achieve that in previous years, but finally
+I managed to get at least one in each month. Surprisingly I read 17 fiction and 15 non-fiction
+which is the first time that my
 fiction to non-fiction was not around 3:1. I didn't intentionally read more non-fiction, but I guess
 that is just what came up on my list. Another year of mostly good books, I am pretty good at
 screening books for whether I will like it or not. This is the biggest thing that helps me to read
