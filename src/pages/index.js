@@ -19,8 +19,9 @@ const PostDate = styled.span`
 
 export default ({ data }) => (
   <Layout>
-    <p>I am currently working at <a href="https://www.rollbar.com" rel="noopener noreferrer" target="_blank">Rollbar</a> as
-      the Lead SDK Engineer. In the past few years I have worked at{" "}
+    <p>I am currently working at <a href="https://www.google.com" rel="noopener noreferrer" target="_blank">Google</a> as
+      a software engineer. Over the past decade I have worked at{" "}
+      <a href="https://www.rollbar.com" rel="noopener noreferrer" target="_blank">Rollbar</a>,{" "}
       <a href="https://alan.eu" rel="noopener noreferrer" target="_blank">Alan</a>,{" "}
       <a href="https://www.flexport.com" rel="noopener noreferrer" target="_blank">Flexport</a>, and{" "}
       <a href="https://www.facebook.com/" rel="noopener noreferrer" target="_blank">Facebook</a> doing software and data science related things.
