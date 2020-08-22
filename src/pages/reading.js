@@ -16,6 +16,7 @@ export default ({ data }) => {
   let lastYear = null;
   let monthly = {}
   let yearly = {}
+  let totals = {fiction: 0, nonfiction: 0, bad: 0, okay: 0, good: 0, great: 0, count: 0, pagecount: 0}
   _.each(books, book => {
     const data = book.node.frontmatter
     const date = data.date
@@ -32,31 +33,39 @@ export default ({ data }) => {
     if (_.includes(tags, 'fiction')) {
       monthData['fiction'] += 1
       yearData['fiction'] += 1
+      totals['fiction'] += 1
     }
     if (_.includes(tags, 'nonfiction')) {
       monthData['nonfiction'] += 1
       yearData['nonfiction'] += 1
+      totals['nonfiction'] += 1
     }
     if (_.includes(tags, 'bad')) {
       monthData['bad'] += 1
       yearData['bad'] += 1
+      totals['bad'] += 1
     }
     if (_.includes(tags, 'okay')) {
       monthData['okay'] += 1
       yearData['okay'] += 1
+      totals['okay'] += 1
     }
     if (_.includes(tags, 'good')) {
       monthData['good'] += 1
       yearData['good'] += 1
+      totals['good'] += 1
     }
     if (_.includes(tags, 'great')) {
       monthData['great'] += 1
       yearData['great'] += 1
+      totals['great'] += 1
     }
     monthData['pagecount'] += pagecount
     yearData['pagecount'] += pagecount
+    totals['pagecount'] += pagecount
     monthData['count'] += 1
     yearData['count'] += 1
+    totals['count'] += 1
 
     monthly[date] = monthData
     yearly[year] = yearData
@@ -106,6 +115,7 @@ export default ({ data }) => {
       {years.map(year => (
         <Yearly key={year} year={year} data={yearly[year]} />
       ))}
+      <Yearly key={'total'} year={'Total'} data={totals} />
   </Layout>
   )
 }
