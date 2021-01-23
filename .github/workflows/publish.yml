@@ -35,7 +35,7 @@ jobs:
           cd _deploy/
           git init -q
           git checkout --orphan master -q
-          git remote add origin git@github.com:rokob/rokob.github.com.git
+          git remote add origin "https://rokob:${{ github.token }}@github.com/rokob/rokob.github.com.git"
 
       - name: Deploy
         env:
