@@ -1,3 +1,2 @@
-Travis is setup by using the gem to encrypt some environment variables:
-
-$ travis encrypt GH_TOKEN=<github_token> GIT_NAME=<username> GIT_EMAIL=<email>
+This is the source branch for my blog. This used to be deployed by Travis, but they shut down their
+free tier so now it is run by Github Actions.

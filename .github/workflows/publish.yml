@@ -9,8 +9,6 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
       - name: Set up Node.js
@@ -24,10 +22,6 @@ jobs:
       - name: Build site
         run: npm run build
 
-      - name: Hello
-        run: |
-          ls -la
-    
       - name: Init deploy repo
         run: |
           mkdir _deploy
@@ -43,9 +37,8 @@ jobs:
         run: |
           cp -r public/* _deploy/
           cd _deploy/
-          ls -la
           git config --global user.name "${{ github.event.pusher.name }}"
           git config --global user.email "${{ github.event.pusher.email }}"
           git add --all .
-          git commit -m "generated from ${COMMIT:0:8}"
-          git push origin master --force
+          git commit -m "generated from ${COMMIT:0:8}" -q
+          git push origin master --force -q
