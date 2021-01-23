@@ -22,6 +22,10 @@ git_check() {
 }
 
 setup() {
+  info "setup turned off"
+}
+
+x_setup() {
   rm -rf $DEPLOY
   mkdir $DEPLOY
 
@@ -56,6 +60,10 @@ travis_teardown() {
 }
 
 deploy() {
+  info "turned off for now"
+}
+
+x_deploy() {
   COMMIT=$(git log -1 HEAD --pretty=format:%H)
   SHA=${COMMIT:0:8}
 
