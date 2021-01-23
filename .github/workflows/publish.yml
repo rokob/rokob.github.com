@@ -43,6 +43,9 @@ jobs:
         run: |
           cp -r public/* _deploy/
           cd _deploy/
+          ls -la
+          git config --global user.name "${{ github.event.pusher.name }}"
+          git config --global user.email "${{ github.event.pusher.email }}"
           git add --all .
           git commit -m "generated from ${COMMIT:0:8}"
           git push origin master --force
