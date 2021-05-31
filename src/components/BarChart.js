@@ -59,7 +59,7 @@ export default class BarChart extends React.Component {
     firstDate = `${niceMonth(firstDate[1])} ${firstDate[0]}`
     let lastDate = dates[dates.length-1].split('-')
     lastDate = `${niceMonth(lastDate[1])} ${lastDate[0]}`
-    const barWidthVal = Math.round(100 / bars.length * 100) / 100
+    const barWidthVal = Math.floor(100 / bars.length * 100) / 100
     const barWidth = `${barWidthVal}%`
     const hoverString = this.state.value ? `${niceMonth(this.state.month)} ${this.state.year}: ${niceNum(this.state.value)}` : null
     return (
