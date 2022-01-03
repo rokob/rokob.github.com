@@ -46,6 +46,7 @@ jobs:
           cp -r public/* _deploy/
           cd _deploy/
           mv well-known .well-known
+          mv nojekyll .nojekyll
           git config --global user.name "${{ github.event.pusher.name }}"
           git config --global user.email "${{ github.event.pusher.email }}"
           git add --all .
