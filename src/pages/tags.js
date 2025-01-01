@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import kebabCase from "lodash/kebabCase"
-import { Link, graphql } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
+import kebabCase from "lodash/kebabCase";
+import { Link, graphql } from "gatsby";
 
 const TagsPage = ({
   data: {
@@ -11,7 +11,7 @@ const TagsPage = ({
   <Layout>
     <h1>Tags</h1>
     <ul>
-      {group.map(tag => (
+      {group.map((tag) => (
         <li key={tag.fieldValue}>
           <Link to={`/tags/${kebabCase(tag.fieldValue)}/`}>
             {tag.fieldValue} ({tag.totalCount})
@@ -20,9 +20,9 @@ const TagsPage = ({
       ))}
     </ul>
   </Layout>
-)
+);
 
-export default TagsPage
+export default TagsPage;
 
 export const query = graphql`
   query {
@@ -36,4 +36,4 @@ export const query = graphql`
       }
     }
   }
-`
+`;

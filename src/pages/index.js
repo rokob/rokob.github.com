@@ -17,7 +17,7 @@ const PostDate = styled.span`
   color: #bbb;
 `;
 
-export default ({ data }) => (
+const Index = ({ data }) => (
   <Layout>
     <p>
       I am currently taking some time off and open to new opportunties. Over the
@@ -106,6 +106,8 @@ export default ({ data }) => (
     </div>
   </Layout>
 );
+
+export default Index;
 
 // limit: 5
 // this needs to match constants.PostsOnIndex, but we can't interpolate
