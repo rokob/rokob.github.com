@@ -239,7 +239,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { frontmatter: { categories: { eq: "book" } } }
-      sort: { fields: [frontmatter___date], order: ASC }
+      sort: { frontmatter: { date: ASC } }
     ) {
       edges {
         node {

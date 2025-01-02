@@ -115,7 +115,7 @@ export const query = graphql`
   query {
     allMarkdownRemark(
       filter: { frontmatter: { published: { ne: false } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { frontmatter: { date: DESC } }
       limit: 5
     ) {
       edges {

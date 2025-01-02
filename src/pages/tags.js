@@ -30,7 +30,7 @@ export const query = graphql`
       limit: 2000
       filter: { frontmatter: { published: { ne: false } } }
     ) {
-      group(field: frontmatter___tags) {
+      group(field: { frontmatter: { tags: SELECT } }) {
         fieldValue
         totalCount
       }
