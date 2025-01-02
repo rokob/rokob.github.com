@@ -7,7 +7,7 @@ tags: ["book", "good", "nonfiction", "philosophy"]
 pagecount: 336
 ---
 
-I had this book [*Flow (again)*][book-amaz] on my Kindle and couldn't remember whether I had read it
+I had this book [*Flow*][book-amaz] on my Kindle and couldn't remember whether I had read it
 yet or not, so I decided to read it. Just now as I sat down to write this I realized I coud have
 checked this blog to find out if I had read it before and lo and behold [I read it in
 2015](/blog/2015-06-06-flow/). This is somewhat disheartening as while reading it this time I
