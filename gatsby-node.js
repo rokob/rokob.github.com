@@ -15,6 +15,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       );
       sha = sha.toString();
     } catch (e) {}
+    console.log("XXX => ", node.fileAbsolutePath, " -- ", sha);
     const slug = createFilePath({ node, getNode, basePath: `content` });
     const sourceName = getNode(node.parent).sourceInstanceName;
     createNodeField({
