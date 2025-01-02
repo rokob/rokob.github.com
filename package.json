@@ -32,5 +32,14 @@
     "react-typography": "^0.16.23",
     "typography": "^0.16.19",
     "typography-theme-sutro": "^0.16.19"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.0.0"
+    }
+  },
+  "engines": {
+    "npm": ">=9.0.0 <10.0.0",
+    "node": ">=19.0.0 <20.0.0"
   }
 }
