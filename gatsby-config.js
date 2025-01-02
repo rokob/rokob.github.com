@@ -3,6 +3,7 @@ module.exports = {
     title: `rokob`,
   },
   plugins: [
+    `gatsby-plugin-image`,
     `gatsby-plugin-emotion`,
     {
       resolve: `gatsby-plugin-typography`,
@@ -51,4 +52,4 @@ module.exports = {
     `gatsby-transformer-sharp`,
     `gatsby-plugin-catch-links`,
   ],
-}
+};

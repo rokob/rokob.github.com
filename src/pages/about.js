@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import doggo from "../../content/images/dogmap.jpg";
+import { StaticImage } from "gatsby-plugin-image";
 
 const About = () => (
   <Layout>
@@ -19,7 +19,7 @@ const About = () => (
       </a>
       .
     </p>
-    <img src={doggo} alt="Doggos" />
+    <StaticImage src="../../content/images/dogmap.jpg" alt="Doggos" />
   </Layout>
 );
 
