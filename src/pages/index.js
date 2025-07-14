@@ -15,7 +15,7 @@ const PostTitle = styled.h3`
 `;
 
 const PostDate = styled.span`
-  color: #bbb;
+  color: #555;
 `;
 
 const Index = ({ data }) => (

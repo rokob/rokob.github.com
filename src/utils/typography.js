@@ -1,7 +1,13 @@
-import Typography from "typography"
-import sutroTheme from "typography-theme-sutro"
+import Typography from "typography";
+import sutroTheme from "typography-theme-sutro";
 
-const typography = new Typography(sutroTheme)
+sutroTheme.overrideThemeStyles = () => ({
+  a: {
+    color: "#4b0082",
+  },
+});
 
-export default typography
-export const rhythm = typography.rhythm
+const typography = new Typography(sutroTheme);
+
+export default typography;
+export const rhythm = typography.rhythm;
