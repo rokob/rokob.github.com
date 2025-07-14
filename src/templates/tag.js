@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -47,6 +48,11 @@ const Tag = ({ pageContext, data }) => {
 };
 
 export default Tag;
+
+export const Head = ({ location, pageContext }) => {
+  const { tag } = pageContext;
+  return <SEO pathname={location.pathname} title={`rokob :: Tag ${tag}`} />;
+};
 
 export const query = graphql`
   query markdownContentForTagPage($tag: String) {

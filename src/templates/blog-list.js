@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -161,6 +162,16 @@ const Pagination = ({ numPages, pageNumber, prev, next }) => {
 };
 
 export default BlogList;
+
+export const Head = ({ location, pageContext }) => {
+  const { numPages, pageNumber } = pageContext;
+  return (
+    <SEO
+      pathname={location.pathname}
+      title={`rokob :: Blog list page ${pageNumber} of ${numPages}`}
+    />
+  );
+};
 
 export const query = graphql`
   query blogListQuery($skip: Int!, $limit: Int!) {

@@ -3,6 +3,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -20,8 +21,15 @@ const PostDate = styled.span`
 const Index = ({ data }) => (
   <Layout>
     <p>
-      I am currently taking some time off and open to new opportunties. Over the
-      past twelve or so years I have worked at{" "}
+      I am currently working at{" "}
+      <a
+        href="https://www.reddit.com"
+        rel="noopener noreferrer"
+        target="_blank"
+      >
+        Reddit
+      </a>
+      . Over the past twelve or so years I have worked at{" "}
       <a
         href="https://www.opensea.io"
         rel="noopener noreferrer"
@@ -108,6 +116,8 @@ const Index = ({ data }) => (
 );
 
 export default Index;
+
+export const Head = () => <SEO />;
 
 // limit: 5
 // this needs to match constants.PostsOnIndex, but we can't interpolate

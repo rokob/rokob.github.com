@@ -1,6 +1,7 @@
 import React from "react";
 import { graphql, Link } from "gatsby";
 import Layout from "../components/layout";
+import SEO from "../components/seo";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import _ from "lodash";
@@ -66,6 +67,11 @@ const BlogPostPage = ({ data }) => {
 };
 
 export default BlogPostPage;
+
+export const Head = ({ location, data }) => {
+  const title = data.markdownRemark.frontmatter.title;
+  return <SEO pathname={location.pathname} title={`rokob :: ${title}`} />;
+};
 
 export const query = graphql`
   query ($slug: String!) {

@@ -1,6 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `rokob`,
+    title: `rokob :: Andy Weiss`,
+    description: `Personal site of Andy Weiss`,
+    image: `/favicon-32x32.png`,
+    siteUrl: `https://rokob.github.io`,
+    twitterUsername: "@dragonb3ar",
   },
   plugins: [
     `gatsby-plugin-image`,
