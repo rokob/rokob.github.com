@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import kebabCase from "lodash/kebabCase";
 import { Link, graphql } from "gatsby";
 
@@ -25,7 +25,7 @@ const TagsPage = ({
 
 export default TagsPage;
 
-export const Head = () => <SEO pathname="/tags" />;
+export const Head = () => <Seo pathname="/tags" />;
 
 export const query = graphql`
   query {

@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `rokob :: Andy Weiss`,
+    title: `rokob`,
     description: `Personal site of Andy Weiss`,
     image: `/favicon-32x32.png`,
     siteUrl: `https://rokob.github.io`,

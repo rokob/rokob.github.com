@@ -2,7 +2,7 @@ import React from "react";
 import { graphql } from "gatsby";
 import styled from "@emotion/styled";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 import _ from "lodash";
 
 import BarChart from "../components/BarChart";
@@ -236,7 +236,7 @@ const Yearly = ({ year, data }) =>
 
 export default ReadingPage;
 
-export const Head = () => <SEO pathname="/reading" />;
+export const Head = () => <Seo pathname="/reading" />;
 
 export const query = graphql`
   query {

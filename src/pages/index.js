@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -117,7 +117,7 @@ const Index = ({ data }) => (
 
 export default Index;
 
-export const Head = () => <SEO />;
+export const Head = () => <Seo />;
 
 // limit: 5
 // this needs to match constants.PostsOnIndex, but we can't interpolate

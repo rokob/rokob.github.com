@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { StaticQuery, Link, graphql } from "gatsby";
+import { useStaticQuery, Link, graphql } from "gatsby";
 
 import { rhythm } from "../utils/typography";
 
@@ -34,30 +34,29 @@ const RightLink = styled(Link)`
   padding-left: ${rhythm(1 / 2)};
 `;
 
-const TheComponent = ({ children }) => (
-  <StaticQuery
-    query={graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-          }
+const TheComponent = ({ children }) => {
+  const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
         }
       }
-    `}
-    render={(data) => (
-      <Container>
-        <Link to={`/`}>
-          <Title>{data.site.siteMetadata.title}</Title>
-        </Link>
-        <RightLinks>
-          <RightLink to={`/reading`}>Reading</RightLink>
-          <RightLink to={`/about`}>About</RightLink>
-        </RightLinks>
-        <ChildWrapper>{children}</ChildWrapper>
-      </Container>
-    )}
-  />
-);
+    }
+  `);
+
+  return (
+    <Container>
+      <Link to={`/`}>
+        <Title>{data.site.siteMetadata.title}</Title>
+      </Link>
+      <RightLinks>
+        <RightLink to={`/reading`}>Reading</RightLink>
+        <RightLink to={`/about`}>About</RightLink>
+      </RightLinks>
+      <ChildWrapper>{children}</ChildWrapper>
+    </Container>
+  );
+};
 
 export default TheComponent;

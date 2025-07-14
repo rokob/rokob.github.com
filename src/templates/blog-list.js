@@ -3,7 +3,7 @@ import { Link, graphql } from "gatsby";
 import styled from "@emotion/styled";
 import { rhythm } from "../utils/typography";
 import Layout from "../components/layout";
-import SEO from "../components/seo";
+import Seo from "../components/seo";
 
 const PostLink = styled(Link)`
   text-decoration: none;
@@ -166,9 +166,9 @@ export default BlogList;
 export const Head = ({ location, pageContext }) => {
   const { numPages, pageNumber } = pageContext;
   return (
-    <SEO
+    <Seo
       pathname={location.pathname}
-      title={`rokob :: Blog list page ${pageNumber} of ${numPages}`}
+      title={`Blog list page ${pageNumber} of ${numPages}`}
     />
   );
 };
