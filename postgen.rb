@@ -7,14 +7,36 @@ module PostGen
   class PostGen
     SEPARATOR = '---'
 
-    def self.run
-      gen = PostGen.new
+    def self.run(args=ARGV)
+      gen = PostGen.new(date_from_args(args))
       gen.gather_info
       gen.output
+    rescue ArgumentError => e
+      abort e.message
     end
 
-    def initialize
-      @date = DateTime.now
+    def self.date_from_args(args)
+      return DateTime.now if args.empty?
+      raise ArgumentError, usage if args.length > 1
+      parse_date_arg(args.shift)
+    end
+
+    def self.parse_date_arg(input)
+      unless input.match?(/\A\d{4}-\d{2}-\d{2}\z/)
+        raise ArgumentError, "Date must be in yyyy-mm-dd format"
+      end
+
+      DateTime.strptime(input, '%Y-%m-%d')
+    rescue Date::Error
+      raise ArgumentError, "Date must be a valid yyyy-mm-dd date"
+    end
+
+    def self.usage
+      "Usage: #{File.basename($PROGRAM_NAME)} [yyyy-mm-dd]"
+    end
+
+    def initialize(date=DateTime.now)
+      @date = date
       @pagecount = nil
       @book_link = nil
     end
@@ -117,7 +139,7 @@ module PostGen
 
     def ask(prompt)
       print "#{prompt}>  "
-      result = readline
+      result = STDIN.readline
       yield result.strip if block_given?
     end
   end
